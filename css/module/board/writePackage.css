@@ -1,0 +1,26 @@
+/* 게시판 전체 공통 */
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+/* write */
+.xans-board-write .ec-base-table table { table-layout:fixed; }
+.xans-board-write .ec-base-table tr.agree td textarea { width:100%; max-width:560px; height:140px; margin:0 0 10px; }
+.xans-board-write .ec-base-table #subject { width:100%; max-width:390px; }
+.xans-board-write .ec-base-table #captcha { width:160px; }
+.xans-board-write .ec-base-table #ucc_width, .xans-board-write table #ucc_height { width:40px; margin-left:4px; }
+.xans-board-write .ec-base-table #email1 { margin:0 4px 0 0; }
+.xans-board-write .ec-base-table #email2 { margin:0 4px; }
+.xans-board-write .ec-base-button { margin:10px 0 40px; }
+
+/* write - 상품 */
+.xans-board-write .ec-base-box.typeProduct { margin:0 0 20px; }
+.xans-board-write .information h3 { margin:16px 0 8px; font-size:14px; color:#222; font-weight: 400; }
+.xans-board-write .information .price { font-size:14px; font-weight:bold; color:#000; }
+.xans-board-write .information .button { margin:16px 0 0 0; padding:16px 0 0 0; border-top:1px solid #eee; }
+
+ul.info { margin: 20px 0 0; color: #707070; line-height: 1.5; }
+ul.info li + li {padding: 4px 0 0 9px;}
+ul.info li { padding: 0 0 0 9px; background: url("//img.echosting.cafe24.com/skin/base/common/ico_square2.gif") no-repeat 4px 7px; }
+
+@media all and (max-width:767px){
+	.xans-board-write .ec-base-table #subject { display:block; }
+}

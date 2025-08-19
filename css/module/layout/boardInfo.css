@@ -1,0 +1,8 @@
+.xans-board-mainpackage { margin:16px 8px 0; background:#f7f7f7; }
+.xans-board-mainpackage a { display:block; padding:12px 35px 11px 16px; line-height:1.5em; font-size:16px; font-weight:500; color:#333; background: url("/web/upload/goodymall/kr/layout/btn_more_board.png") no-repeat scroll 94% 50%; background-size: 13px 25px; }
+.xans-board-mainpackage ul { display:flex; flex-wrap:wrap; }
+.xans-board-mainpackage li { flex-basis:50%; }
+
+@media all and (max-width:767px){
+    .xans-board-mainpackage a { font-size:14px; }
+}

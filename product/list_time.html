@@ -1,0 +1,116 @@
+<!--@layout(/layout/basic/layout_titleArea.html)-->
+<div module="Product_menupackage">
+    <!--@css(/css/module/product/menupackage.css)-->
+    <!--@js(/js/module/product/menucategory.js)-->
+    
+    <!--상품페이지 상단 이미지 & 타이틀 & 현재 위치-->
+    <div class="top_titleArea" module="product_headcategory">
+        <div class="imgArea">{$top_image1_tag}{$top_image2_tag}{$top_image3_tag}</div>
+        <div class="path">
+            <span>현재 위치</span>
+            <ol>
+                <li><a href="/">홈</a></li>
+                <li class="{$disp_cate_1|display}"><a href="{$link_product_list_1}">{$name_1}</a></li>
+                <li class="{$disp_cate_2|display}"><a href="{$link_product_list_2}">{$name_2}</a></li>
+                <li class="{$disp_cate_3|display}"><a href="{$link_product_list_3}">{$name_3}</a></li>
+                <li class="{$disp_cate_4|display}"><strong><a href="{$link_product_list_4}">{$name_4}</a></strong></li>
+            </ol>
+        </div>
+
+        <div class="titleArea" >
+            <h2><span>{$title_text_or_image}</span><span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span></h2>
+            
+        </div>
+    </div>
+    
+
+
+    <!--@import(/product/shoppQ/searchContent.html)-->
+
+    <ul class="menuCategory">
+        <li module="product_displaycategory" style="display:{$display};" class="{$selected}">
+            <a href="{$link_product_list_sub}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+            <ul module="product_children">
+                <li class="{$selected}">
+                    <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="{$selected}">
+                    <a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a>
+                    <div class="button">
+                        {$children_icon}
+                        <ul module="product_children" class="subCategory">
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                            <li class="{$selected}"><a href="{$link_product_list_sub}">{$category_name} <span class="{$product_count_display|display}">({$product_count})</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="contents"><!--layout_titleArea의 contents 시작-->
+    
+<!---------------------------------------------------------------------------------------------------------------------------
+■ 상품분류 페이지 best& new ■
+
+※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+---------------------------------------------------------------------------------------------------------------------------->    
+<!--@import(/gd_import/list_best_roll.html)-->
+
+
+<div module="product_normalpackage">
+    <!--@css(/css/module/product/listnormal.css)-->
+    <div module="product_normalmenu">
+        <!--
+            $compare_page = /product/compare.html
+        -->
+
+        <div class="function" id="{$listmenu_position}">
+            <p class="prdCount dp_none">등록 제품 : <strong>{$total_count}</strong>개</p>
+        
+            <!--@js(/js/module/product/normalmenu.js)-->
+            <div class="sort">
+                <select id="selArray" name="selArray" module="product_Orderby">
+                    <option value="{$param}">{$sort_name}</option>
+                    <option value="{$param}">{$sort_name}</option>
+                </select>
+            </div>
+        </div>        
+    </div>
+
+    <div module="product_listnormal" class="time_banner time_banner_all ec-base-product">
+        <!--
+            $count = 10
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <!--@import(/gd_import/time_banner_list.html)-->
+    </div>
+</div>
+
+<div module="product_normalpaging" class="ec-base-paginate">
+    <a href="{$param_first}" class="first"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_first.gif" alt="첫 페이지" /></a>
+    <a href="{$param_before}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev.gif" alt="이전 페이지" /></a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next.gif" alt="다음 페이지" /></a>
+    <a href="{$param_last}" class="last"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_last.gif" alt="마지막 페이지" /></a>
+</div>
+
+<!--@js(/gd_import/js/sale_price.js)-->

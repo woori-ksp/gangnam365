@@ -1,0 +1,34 @@
+<div class="inner">
+    <div class="topArea02">
+        
+        <!-- 좌측 햄버거 메뉴 시작 -->
+        <!--@js(/layout/sidebar.js)-->    
+        <div class="side">
+            <button type="button" class="btnCate">        
+                <i class="xi-bars"></i>
+            </button>
+            <!--@import(/layout/sidebar.html)-->
+        </div>
+        <!-- 좌측 햄버거 메뉴 끝 -->
+        
+        <!-- * 로고 시작 h1* -->
+        <div module="Layout_LogoTop">
+            <a href="/index.html"><img src="/web/upload/goodymall/kr/main/logo.png" alt="{$mall_name}" /></a>
+        </div>
+        <!-- * 로고 시작 끝 * -->
+        
+        <!-- * 좌측 아이콘 시작 * -->
+        <div class="right_icon">                      
+            <div class="searchWrap">
+                <span class="search">
+                    <a href="/product/search.html"><i class="xi-search"></i></a>
+                </span>
+            </div>
+            <div class="cartWrap" module="Layout_orderBasketcount">
+                <a href="/order/basket.html" class="btnCart"><i class="xi-cart-o"></i><span class="count">{$basket_count}</span></a>
+            </div> 
+        </div>
+        <!-- * 좌측 아이콘 시작 끝 * -->
+        
+    </div> <!-- topArea02 끝 -->  
+</div>

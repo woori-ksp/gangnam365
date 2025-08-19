@@ -1,0 +1,19 @@
+.left_search { box-sizing:border-box; overflow:hidden; width:100%; margin:0 auto; }
+
+.xans-layout-searchheader { /*position:absolute;*/ position:relative; margin:16px 2px; box-sizing:border-box; }
+.xans-layout-searchheader fieldset { border:2px solid var(--point_color); border-radius: 30px; background:#fff; }
+.xans-layout-searchheader #keyword  { width:75%; height:46px; margin:0 16px 0 20px; padding:0; border:0; line-height:46px; font-size:15px; color:#333; font-weight:400; background:none; outline:none; box-sizing:border-box; }
+.xans-layout-searchheader i { position:relative; /*background:var(--point_color);border-radius:30px; padding:8px;*/ font-size:27px; vertical-align:middle; cursor:pointer; color:var(--point_color); }
+
+/*.xans-layout-searchheader fieldset .autoDrop { display:none; border:1px solid #565960; position:absolute; width: 187px; text-align:left; background:#fff; z-index:20; overflow:hidden; overflow-y:auto; max-height:100px;}
+.xans-layout-searchheader fieldset .autoDrop li a { display:block; padding:6px 10px; font-size:11px; color:#1c1c1c; font-family:GulimChe,Gulim; }
+.xans-layout-searchheader fieldset .autoDrop li a:hover,
+.xans-layout-searchheader fieldset .autoDrop li.selected a { text-decoration:none; color:#fff; background:#a1a4ae; }*/
+
+.popular{ margin:0 0 5px 12px;}
+.popular a { color: #ababab; padding: 0 5px; font-size: 14px; font-weight: 300;}
+.popular a:hover{color:#000;}
+
+.bestKeyword { display:flex; flex-wrap:wrap; box-sizing:border-box; }
+.bestKeyword .tit { display:none; }
+.bestKeyword a {padding:4px 16px; margin:2px; border-radius: 30px; border:2px solid #eee; background:#fff; display:inline-block; /*width:25%;*/ font-size:14px; color:#333; font-weight:400;}

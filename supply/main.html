@@ -1,0 +1,47 @@
+<!--@layout(/layout/basic/main_supply.html)-->
+<div module="Mall_SupplyMainimage">
+    <!--@css(/css/module/mall/supplyMainimage.css)-->
+    {$supply_main_image}
+</div>
+
+<div module="Mall_SupplySearch">
+    <!--@css(/css/module/mall/supplySearch.css)-->
+    <fieldset>
+        <legend class="title">샵 상품 검색</legend>
+        {$form.searchSupply}<input type="image" src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_search.gif" alt="검색" onclick="{$action_search_submit}" class="supply_search" /></fieldset>
+</div>
+
+<div module="product_listmain_1" class="ec-base-product">
+    <!--
+        $count = 8
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <ul class="prdList grid2">
+        <!--@import(/gd_import/prdList.html)-->
+    </ul>
+</div>
+
+<div module="product_supplymainpaging" class="ec-base-paginate">
+    <a href="{$param_first}" class="first"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_first.gif" alt="첫 페이지" /></a>
+    <a href="{$param_before}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev.gif" alt="이전 페이지" /></a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next.gif" alt="다음 페이지" /></a>
+    <a href="{$param_last}" class="last"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_last.gif" alt="마지막 페이지" /></a>
+</div>
+
+<!-- 공급사:판매사정보 -->
+<div module="Mall_SupplyInfo" class="supplyInfo {$supply_info_display|display}">
+    {$supply_info}
+</div>
+<!-- //공급사:판매사정보 -->
+
+<!--@define(cmc_log)-->

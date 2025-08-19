@@ -1,0 +1,92 @@
+<!-- 
+타임세일상품
+판매가, 할인판매가 기준
+프로모션 - 혜택등록
+-->
+<div class="swiper-container time_banner">
+    <div class="box-wrap swiper-wrapper">
+        <div class="box swiper-slide">
+            <div class="item-wrap">
+                <div class="item-top">
+                    <div class="date-wrap">
+                        <div class="date-title"><span class="txt"></span></div>
+                        <div class="countdown"><span>00</span>일 <span>00</span>시 <span>00</span>분 <span>00</span>초</div>
+                    </div>
+                </div>
+                <div class="item-inner">
+                    <div class="item-left round">
+                        <a href="{$link_product_detail}"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    </div>
+                    <div class="item-right">
+                        <div class="description" ec-data-custom="{$product_custom}">
+                            <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                            <ul module="product_ListItem" class="spec">
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap">
+                            <span>{$basket_icon}</span>
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box swiper-slide">
+            <div class="item-wrap">
+                <div class="item-top">
+                    <div class="date-wrap">
+                        <div class="date-title"><span class="txt"></span></div>
+                        <div class="countdown"><span>00</span>일 <span>00</span>시 <span>00</span>분 <span>00</span>초</div>
+                    </div>
+                </div>
+                <div class="item-inner">
+                    <div class="item-left round">
+                        <a href="{$link_product_detail}"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    </div>
+                    <div class="item-right">
+                        <div class="description" ec-data-custom="{$product_custom}">
+                            <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                            <ul module="product_ListItem" class="spec">
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap">
+                            <span>{$basket_icon}</span>
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-time"></div>
+</div> 
+
+<!-- Add Navigation -->
+<!--div class="swiper-button-prev swiper-button-prev-time"></div>
+<div class="swiper-button-next swiper-button-next-time"></div-->
+
+<script>        
+    var swiper = new Swiper('.time_banner', {
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        centeredSlides: false,
+        parallax: true,
+        loop: false,
+        watchOverflow: true,
+        freeMode: true,
+        pagination: {
+            el: '.swiper-pagination-time',
+            clickable:true,
+        },
+       /* navigation: {
+            nextEl: '.swiper-button-next-time',
+            prevEl: '.swiper-button-prev-time',
+        },*/
+    });
+</script>

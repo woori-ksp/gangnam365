@@ -1,0 +1,57 @@
+<div module="product_listrecommend" class="ec-over-product prdRoll list_best">
+    <!--
+        $count = 8
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <div class="title">
+        <h3><span>BEST</span></h3>
+    </div>
+
+    <div class="swiper-container prdSlide">    
+        <ul class="prdList swiper-wrapper">
+            <!--@import(/gd_import/prdList_roll.html)-->
+        </ul> 
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-prd"></div>
+    </div>
+</div>
+
+<div module="product_listnew" class="ec-over-product prdRoll list_new">
+    <!--
+        $count = 8
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <div class="title">
+        <h3><span>NEW</span></h3>
+    </div>
+    <div class="swiper-container prdSlide">    
+        <ul class="prdList swiper-wrapper">
+            <!--@import(/gd_import/prdList_roll.html)-->
+        </ul> 
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-prd"></div>
+    </div>
+</div>
+
+<script>        
+    var swiper = new Swiper('.prdSlide', {
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        centeredSlides: false,
+        watchOverflow : true,
+        parallax: true,
+        loop: false,
+        freeMode: true,
+        pagination: {
+            el: '.swiper-pagination-prd',
+            clickable:true,
+        },
+    });
+</script> 

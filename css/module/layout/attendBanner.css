@@ -1,0 +1,3 @@
+/* 출석체크 이벤트 배너 */
+.attend_m.xans-layout-attendbanner { display:none; margin: 24px 8px; background-color:#fff; border-radius: 4px; overflow: hidden; }
+.attend_m.xans-layout-attendbanner img { width:100%; }

@@ -1,0 +1,63 @@
+<div module="Layout_footer">
+    <div class="inner">
+        <div class="footer_tit">CONTACT US</div>
+        
+        <div class="footer01" module="Layout_Info"> <!--footer01 시작-->
+            <ul>
+                <li>
+                    <p>고객센터</p>
+                    <p class="tel">{$phone}</p>
+                </li>
+                <li>
+                    <!--h3>이용시간</h3-->
+                    <p class="time">{$runtime}</p>
+                </li>
+            </ul>
+        </div><!--footer01 끝-->
+        
+        <div class="footer02"> <!--footer02 시작-->
+            <!---------------------------------------------------------------------------------------------------------------------------
+            ■ 사업자정보 ■
+            ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+            ---------------------------------------------------------------------------------------------------------------------------->
+            <!--@import(/gd_import/footer_info.html)-->
+        </div><!--footer02 끝-->
+                
+        <div class="footer03"> <!--footer03 시작-->
+            <p class="copyright">&copy; 2024 {$mall_name}. All rights reserved.</p>
+             <ul class="footer_sns">
+                <li><a href="//www.facebook.com" target="_blank"><i class="xi-facebook"></i></a></li>
+                <li><a href="//www.instagram.com" target="_blank"><i class="xi-instagram"></i></a></li>
+                <!--li><a href="//www.kakao.com/talk/ko" target="_blank"><i class="xi-kakaotalk"></i></a></li-->
+                <li><a href="//www.youtube.com" target="_blank"><i class="xi-youtube-play"></i></a></li>                    
+            </ul>
+        </div><!--footer03 끝-->        
+    </div>
+</div>
+
+
+<!-- * 스크롤시 나타나는 우측 하단버튼 * -->
+<div id="goBtn" class="fixed_btn">
+    <!------------------------------------------------------------------------------------------------
+        ■ 최근 본 상품 ■
+
+        ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+        ※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+    ------------------------------------------------------------------------------------------------->
+    <!--import(/gd_import/recent_item.html)-->
+    
+    <div class="scroll_btn">
+        <!--------------------------------------------------------------------------------------------------
+            ■ 스크롤시 나타나는 sns 버튼 ■
+
+            1) 카카오채널 - 카카오채널 관리자센터에서 홈 생성 후, 발급받은 URL을 a태그에 삽입해 주시기 바랍니다.
+            2) 네이버 톡톡 - 네이버 톡톡센터에서 계정 생성 후 발급받은 배너 소스를 삽입해주시기 바랍니다.
+        ----------------------------------------------------------------------------------------------------->
+        <div class="kakao_icon"><a href="//pf.kakao.com/" target="_blank"><i class="xi-kakaotalk"></i></a></div>
+        <div class="naver_icon"><a href="//partner.talk.naver.com" target="_blank"><i class="xi-naver"></i></a></div>
+
+        <!-- * 스크롤 버튼 * -->
+        <a href="#none" class="btn up fade"><i class="xi-angle-up"></i></a>
+        <!--a href="#none" class="btn down fade"><i class="xi-angle-down"></i></a-->
+    </div>    
+</div>

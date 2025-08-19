@@ -1,0 +1,49 @@
+/*.regularDeliveryPayInfo { position:relative; margin:0 0 30px; }
+.regularDeliveryPayInfo > .title { margin:0 0 10px; font-size:16px; color:#333; }
+.regularDeliveryPayInfo .ec-base-box { border: 1px solid #ddd; border-width: 1px 0; }
+.regularDeliveryPayInfo .ec-base-box .information { float:left; }
+.regularDeliveryPayInfo .ec-base-box .information .title { display:table-cell; height:24px; padding:0 15px 0 0; line-height:24px; font-size:16px; background:url(//img.echosting.cafe24.com/skin/base/common/ico_bar.gif) no-repeat 100% 6px; }
+.regularDeliveryPayInfo .ec-base-box .information .content { display:table-cell; }
+.regularDeliveryPayInfo .ec-base-box .information .status { position:relative; padding:0 15px; font-size: 16px; font-weight:500; color:#000; }
+.regularDeliveryPayInfo .ec-base-box .information .info { padding:13px 15px 0; color:#555; font-size: 14px; line-height:1.5; }
+.regularDeliveryPayInfo .ec-base-box .button { padding:0 0 0 10px; }
+.regularDeliveryPayInfo .ec-base-box .button > .btnEm { padding:6px 10px; background:#f8f8f8; }
+.regularDeliveryPayInfo .ec-base-box .button > .btnNormal { padding:6px 10px; border:1px solid #b4b4b4; }
+.regularDeliveryPayInfo .ec-base-box:after { content:''; display:block; clear:both; }
+.regularDeliveryPayInfo ul { margin:10px 0 0; color:#777; line-height:1.6; font-size: 13px; }
+.regularDeliveryPayInfo ul li { padding:0 0 0 9px; background: url(//img.echosting.cafe24.com/skin/base/common/ico_square2.gif) no-repeat 4px 7px; }
+.regularDeliveryPayInfo .ec-base-tooltip { top:90px; right:25px; }
+.regularDeliveryPayInfo .ec-base-tooltip p + p { margin:10px 0 0; }*/
+
+
+.regularDeliveryPayInfo { margin:7px 7px 14px; }
+.regularDeliveryPayInfo > h3.title { padding:14px; border:1px solid #ddd; border-width: 1px 0; background:#fcfcfc; color: #333; }
+.regularDeliveryPayInfo .ec-base-box { margin:0; padding:0; border: 1px solid #fff; }
+.regularDeliveryPayInfo .information { padding:14px; }
+.regularDeliveryPayInfo .information h4.title { font-size: 14px; font-weight: 400; }
+.regularDeliveryPayInfo .information .content { padding:13px 0 0; }
+.regularDeliveryPayInfo .information .content .info { padding:5px 0 0; font-size:12px; }
+.regularDeliveryPayInfo .information .status { vertical-align:middle; font-size:16px; font-weight:500; color:#000; }
+.regularDeliveryPayInfo .information .status .cardName { font-size:12px; }
+.regularDeliveryPayInfo .button { padding:8px 0 0; text-align:center; border-top:1px solid #ddd; font-weight: 400; }
+.regularDeliveryPayInfo .button .btnStrong,
+.regularDeliveryPayInfo .button .btnNormal {  height:35px; line-height:35px; }
+.regularDeliveryPayInfo .button .cardSearch { display:block; }
+.regularDeliveryPayInfo .button .modify { width:49.3%; margin-right:1.4%; }
+.regularDeliveryPayInfo .button .delete { width:49.3%; }
+
+.regularDeliveryPayInfo span.ec-base-help,.regularDeliveryPayInfo  p.ec-base-help, .regularDeliveryPayInfo  ul.ec-base-help li { margin:15px 9px 2px; }
+
+/* 카드정보 조회 */
+.regularDeliveryPayInfo .wrap { display:none; z-index:999; position:fixed; left:2% !important; width:96%; top:100px; margin:0; padding:0; border:1px solid #ddd; background:#fff; border-radius:5px; box-sizing:border-box;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+.regularDeliveryPayInfo .wrap h3 { padding:0 14px; font-size:13px; line-height:36px; background-color:#f0f0f0; border-bottom:1px solid #ddd; border-radius:5px 5px 0 0; }
+.regularDeliveryPayInfo .wrap .content { padding:14px; }
+.regularDeliveryPayInfo .wrap h4 { position:relative; margin:0 7px 7px; }
+.regularDeliveryPayInfo .wrap h4:before { display:inline-block; content:""; margin:0 5px 0 0; width:3px; height:3px; background:#666; vertical-align:middle; }
+.regularDeliveryPayInfo .wrap .txtEm { color:#000; }
+.regularDeliveryPayInfo .wrap .info { margin:0; color:#555; font-size:11px; }
+.regularDeliveryPayInfo .wrap .btnClose { overflow:hidden; position:absolute; right:0; top:0; width:36px; height:36px; font-size:0; border:none; background:transparent url("//img.echosting.cafe24.com/skin/mobile/common/btn_close.png") center center no-repeat; background-size:14px 14px; }

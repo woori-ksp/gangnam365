@@ -1,0 +1,5 @@
+.xans-myshop-couponmemberlist { margin:14px 7px; }
+.xans-myshop-couponmemberlist .item { margin:7px 0 0; font-size:12px; color:#222; }
+.xans-myshop-couponmemberlist .item:first-child { margin:0; }
+.xans-myshop-couponmemberlist .item h3 { padding:14px; font-size:13px; line-height:1.2em; background:#fcfcfc; border:1px solid #ddd; overflow:hidden; }
+.xans-myshop-couponmemberlist .empty { padding:40px 0; font-size:14px; text-align:center; }

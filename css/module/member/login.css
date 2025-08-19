@@ -1,0 +1,44 @@
+.xans-member-login.ec-base-box.typeThin { margin:0 0 20px; padding:0; }
+.xans-member-login .login { padding:49px 8px; color:#2e2e2e; }
+.xans-member-login .login fieldset { position:relative; width:100%; max-width:360px; margin:0 auto; /*padding:0 0 0 9px;*/ }
+.xans-member-login .login fieldset .id,
+.xans-member-login .login fieldset .password { overflow:hidden; display:block; width:100%; margin:0 0 8px; border:1px solid #ddd; border-radius:2px; color:#555; box-sizing: border-box; }
+.xans-member-login .login fieldset .id span,
+.xans-member-login .login fieldset .password span { height:32px; line-height:32px; padding:0 0 0 8px; color:#c9c9c9; }
+.xans-member-login .login fieldset input[type=text],
+.xans-member-login .login fieldset input[type=password] { width:95%; height:40px; line-height:40px; padding:2px 8px; border:0 none; color:#555; box-sizing: border-box; outline:none; }
+.xans-member-login .login fieldset .security { display: inline-block; padding:0 0 0 5px; color:#555; }
+.xans-member-login .login fieldset .security img { vertical-align:middle; }
+.xans-member-login .login fieldset ul.log_option { padding: 0; float: right; }
+.xans-member-login .login fieldset > a { position:relative; }
+.xans-member-login .login fieldset ul { overflow:hidden; padding:20px 55px 5px; margin:0; border:0; }
+.xans-member-login .login fieldset li { float:left; padding:0 9px 0 13px; }
+.xans-member-login .login fieldset li:after { position:relative; top:2px; right:-10px; content:""; display:inline-block; width:1px; height:11px; border-right:1px solid #ddd; }
+.xans-member-login .login fieldset li:last-child:after { border:none; }
+.xans-member-login .login fieldset li a { color:#555; }
+.xans-member-login .login fieldset .link { position:relative; margin:0; padding:25px 0 0 0; color:#555; border-top:1px solid #ddd; }
+.xans-member-login .login fieldset .link a { position:absolute; top:25px; right:0; }
+.xans-member-login .login fieldset .snsArea { padding:0 0 30px; font-size:0; }
+.xans-member-login .login fieldset .snsArea li { width:49%; margin:0.5%; padding:6px 0; text-align:center; font-size:13px; font-weight:300; }
+.xans-member-login .login fieldset .snsArea li:after { content:none; }
+.xans-member-login .login fieldset .snsArea li.btn_naver { background:#26c826; background-image:url("/web/upload/goodymall/kr/layout/btn_naver_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_naver a { color:#fff; }
+.xans-member-login .login fieldset .snsArea li.btn_facebook { background:#4268b3; background-image:url("/web/upload/goodymall/kr/layout/btn_facebook_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_facebook a { color:#fff; }
+.xans-member-login .login fieldset .snsArea li.btn_google { background:#5186f8; background-image:url("/web/upload/goodymall/kr/layout/btn_google_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_google a { color:#fff; }
+.xans-member-login .login fieldset .snsArea li.btn_kakao { background:#ffeb00; background-image:url("/web/upload/goodymall/kr/layout/btn_kakao_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_kakao a { color:#3e2020; }
+.xans-member-login .login fieldset .snsArea li.btn_line { background:#26c826; background-image:url("/web/upload/goodymall/kr/layout/btn_line_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_line a { color:#fff; }
+.xans-member-login .login fieldset .snsArea li.btn_apple { background:#000000; background-image:url("/web/upload/goodymall/kr/layout/btn_apple_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_apple a { color:#fff; }
+.xans-member-login .login fieldset .snsArea li.btn_yahoo { background:#fe0032; background-image:url("/web/upload/goodymall/kr/layout/btn_yahoo_login.jpg"); background-repeat:no-repeat; }
+.xans-member-login .login fieldset .snsArea li.btn_yahoo a { color:#fff; }
+
+.xans-member-login .login fieldset #noMemberWrap { border-top:0; margin-top:0; }
+
+.xans-member-login .btnLogin { height:48px; line-height:48px; width: 100%; display:inline-block; position: relative; margin:16px 0; border: 1px solid #000; background-color: #000; border-radius:2px; font-size: 16px; font-weight: 400; color: #fff; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; z-index: 1;}
+.xans-member-login .btnLogin:after { content: ""; width: 0%; height: 100%; position: absolute; top: 0; left: 0; background: #fff; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.xans-member-login .btnLogin:hover { color: #000; }
+.xans-member-login .btnLogin:hover:after { width: 100%; z-index: -1;}

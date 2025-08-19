@@ -1,0 +1,56 @@
+<div class="relation">
+    <div class="swiper-container prdDetail" module="product_relationlist">
+        <ul class="prdList swiper-wrapper">
+            <li class="item swiper-slide">
+                <div class="box">
+                    <div class="img_zoom round"><a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a></div>
+                    <div class="txt">
+                        <p><a href="{$link_product_detail}">{$name}</a></p>
+                        <ul>
+                            <li><strong class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</strong></li>
+                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                        </ul>
+                    </div>    
+                </div>
+            </li>
+            <li class="item swiper-slide">
+                <div class="box">
+                    <div class="img_zoom round"><a href="{$link_product_detail}"><img src="{$img_medium}" alt="{$seo_alt_tag}" class="thumb" /></a></div>
+                    <div class="txt">
+                        <p><a href="{$link_product_detail}">{$name}</a></p>
+                        <ul>
+                            <li><strong class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</strong></li>
+                            <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                        </ul>
+                    </div>    
+                </div>
+            </li>
+        </ul>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-prddetail"></div>
+    </div>
+</div>
+
+<script>        
+    var relation_swiper = new Swiper('.prdDetail', {
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        centeredSlides: false,
+        loop: false,
+        watchOverflow: true,
+        freeMode: true,
+        pagination: {
+            el: '.swiper-pagination-prddetail',
+            clickable:true,
+        },
+        /*breakpoints: { 
+            767: { 
+                slidesPerView: 3,
+            }, 
+            500: { 
+                slidesPerView: 2,
+            } 
+        },*/
+    });
+</script> 

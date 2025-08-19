@@ -1,0 +1,192 @@
+@charset "utf-8";
+/*
+        이 파일은 원터치 주문서의 읽기 전용 파일입니다.
+        이 파일은 기능 업그레이드 시, 자동으로 개선된 소스가 적용되어 별도로 디자인 수정을 하지 않아도 됩니다 .
+        해당 CSS 문서를 커스터마이징하려면 아래 링크를 참고해 주세요.
+        https://ecsupport.cafe24.com/front/php/b/board_read.php?board_no=5&no=1614
+*/
+@font-face { font-family:'NotoSansKR'; font-style:normal; font-weight:400; src:url('//optimizer.poxo.com/assets/fonts/NotoSansKR-Regular.woff2') format('woff2'),url('//optimizer.poxo.com/assets/fonts/NotoSansKR-Regular.woff') format('woff'); }
+@font-face { font-family:'NotoSansKR'; font-style:normal; font-weight:500; src:url('//optimizer.poxo.com/assets/fonts/NotoSansKR-Medium.woff2') format('woff2'),url('//optimizer.poxo.com/assets/fonts/NotoSansKR-Medium.woff') format('woff'); }
+@font-face { font-family:'NotoSansKR'; font-style:normal; font-weight:700; src:url('//optimizer.poxo.com/assets/fonts/NotoSansKR-Bold.woff2') format('woff2'),url('//optimizer.poxo.com/assets/fonts/NotoSansKR-Bold.woff') format('woff'); }
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+html, body { width:100%; height:100%; }
+body,code { min-width:320px; font-family:'NotoSansKR',"맑은 고딕",Malgun Gothic,AppleSDGothicNeo,"돋움",Dotum,sans-serif; color:#666; background:#fafafa; -webkit-text-size-adjust:none; }
+ul,ol,dl,li { list-style:none; }
+img,fieldset { border:0; max-width:100%; vertical-align:top; }
+i,em,address { font-style:normal; }
+table { table-layout:fixed; width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+table img { vertical-align:middle; }
+th,td { border:0; }
+input,select,textarea { font-size:14px; font-family:'NotoSansKR',"맑은 고딕",Malgun Gothic,AppleSDGothicNeo,"돋움",Dotum,sans-serif; font-weight:400; color:#000; vertical-align:middle; outline:0; border-radius:0; }
+caption { overflow:hidden; width:1px; font-size:1px; line-height:0; text-indent:150%; white-space:nowrap; }
+legend,.blind { display:block; overflow:hidden; position:absolute; font-size:1px; line-height:0; color:transparent; text-indent:-150%; white-space:nowrap; }
+hr.layout { display:none; }
+button { overflow:visible; padding:0; margin:0; border:0; outline:0; cursor:pointer; -webkit-user-select:none; background:transparent; }
+a { text-decoration:none; color:#000; }
+input:-webkit-autofill { -webkit-box-shadow:0 0 0 50px #fff inset; -webkit-text-fill-color:#333; }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance:none; margin:0; }
+input[type=number] { -moz-appearance:textfield; }
+
+
+i.icoReset { display:inline-block; width:20px; height:20px; background:url("//img.echosting.cafe24.com/skin/mobile/order/ico_reset.svg") 0 0 no-repeat; }
+
+#popup.v2 { position:relative; display:flex; flex-direction:column; height:100%; border:0; font-size:13px; letter-spacing:0; }
+#popup.v2 .txtEm,
+#popup.v2 .txtStrong { color:#1c1c1c; }
+#popup.v2 .ec-base-fold > .title .gRight { font-size:13px; }
+#popup.v2 .ec-base-fold #mAllMileageSum-title { font-weight:700; font-size:18px; line-height:24px; letter-spacing:-0.5px; }
+
+#popup.v2 input::placeholder { color:#BDBDBD; opacity:1; }
+#popup.v2 input::-webkit-input-placeholder { color:#BDBDBD; }
+#popup.v2 input::-moz-placeholder { color:#BDBDBD; }
+#popup.v2 input:-moz-placeholder { color:#BDBDBD; }
+#popup.v2 input:-ms-input-placeholder { color:#BDBDBD; }
+
+#popup.v2 textarea::placeholder { color:#BDBDBD; opacity:1; }
+#popup.v2 textarea::-webkit-input-placeholder { color:#BDBDBD; }
+#popup.v2 textarea::-moz-placeholder { color:#BDBDBD; }
+#popup.v2 textarea:-moz-placeholder { color:#BDBDBD; }
+#popup.v2 textarea:-ms-input-placeholder { color:#BDBDBD; }
+
+#popup.v2 input[type="text"], #popup.v2 input[type="password"], #popup.v2 input[type="number"], #popup.v2 input[type="tel"],
+#popup.v2 .directInput .directInput input[readonly] { height:36px; width:100%; padding:10px 12px; box-sizing:border-box; font-size:13px; border:1px solid #CCC; border-radius:4px; outline-style:none; line-height:15px; color:#2B2B2B; font-weight:400; box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 1px 0px rgba(0, 0, 0, 0.06) inset; }
+#popup.v2 textarea { width:100%; max-width:100%; padding:10px 12px; font-size:13px; color:#2b2b2b; border:1px solid #ccc; border-radius:4px; box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 1px 0px rgba(0, 0, 0, 0.06) inset; box-sizing:border-box; resize:none; }
+#popup.v2 select { max-width:100%; height:36px; margin:0; padding:0 20px 0 12px; font-size:13px; line-height:36px; color:#2b2b2b; word-break:break-all; border:1px solid #ccc; border-radius:4px; box-shadow:0px 1px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 2px 1px 0px rgba(0, 0, 0, 0.06) inset; background:#fff url("//img.echosting.cafe24.com/skin/mobile/common/ico_select.svg") no-repeat 100% 50%; -webkit-appearance:none; }
+#popup.v2 .ec-base-mail .mailAddress .directInput input { border:0; border-radius:0; }
+
+
+#popup.v2 label { display:inline-block; min-height:36px; line-height:36px; vertical-align:middle; cursor:pointer; color:#383838; }
+#popup.v2 input[type="radio"] + label { font-size:13px; margin:0 20px 0 8px; }
+#popup.v2 input[type="checkbox"] + label { font-size:13px; margin:0 20px 0 8px; }
+
+#popup.v2 input[type="checkbox"] { margin:0; width:20px; height:20px; border:0; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/mobile/common/bg_checkbox.svg") no-repeat 0 0; background-size:20px 20px; -webkit-appearance:none; margin-bottom:1px; }
+#popup.v2 input:not(:disabled):checked[type="checkbox"] { background-image:url("//img.echosting.cafe24.com/skin/mobile/common/bg_checkbox_checked.svg"); }
+
+#popup.v2 .fRadio[type="radio"],
+#popup.v2 input[type="radio"] { margin:0; width:20px; height:20px; border:0; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/mobile/common/bg_radio.svg") no-repeat 0 0; background-size:20px 20px; -webkit-appearance:none; }
+
+#popup.v2 .fRadio:not(:disabled):checked[type="radio"],
+#popup.v2 .selected > .fRadio,
+#popup.v2 input:not(:disabled):checked[type="radio"] { margin:0; width:20px; height:20px; border:0; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/mobile/common/bg_radio_checked.svg") no-repeat 0 0; background-size:20px 20px; -webkit-appearance:none; }
+
+#popup.v2 .ec-address-zipcode input[readonly],
+#popup.v2 #oaddr1[readonly],
+#popup.v2 #raddr1[readonly],
+#popup.v2 textarea[readonly],
+#popup.v2 input[disabled],
+#popup.v2 textarea[disabled] { color:#BDBDBD; border:1px solid #EBEBEB; background:#fafafa; box-shadow:none; }
+
+
+#popup.v2.scrollTop .header h1 { border-bottom:1px solid #ebebeb; }
+#popup.v2.scrollBottom .footer { border-top:1px solid #ebebeb; }
+
+#popup.v2 .ec-base-layer { display:flex; flex-direction:column; height:100%; height:100dvh; background:#fafafa; }
+#popup.v2 .ec-base-layer .header h1 { display:flex; align-items:center; height:80px; padding:16px 50px 16px 16px; box-sizing:border-box; color:#1c1c1c; font-weight:700; font-size:22px; line-height:32px; text-align:left; letter-spacing:-0.5px; background:#fafafa; }
+#popup.v2 .ec-base-layer .wrap { display:flex; flex:1; flex-direction:column; gap:12px; overflow-x:auto; overflow-y:auto; padding:16px; background:#fafafa; }
+#popup.v2 .ec-base-layer .wrap .title { padding:8px 0; }
+#popup.v2 .ec-base-layer .wrap .title h2 { font-weight:500; font-size:13px; line-height:20px; color:#1c1c1c; }
+#popup.v2 .ec-base-layer .wrap .contents .segment { padding:0; }
+#popup.v2 .ec-base-layer .gBlank16 { display:flex; margin-top:16px; }
+#popup.v2 .ec-base-layer .btnClose { overflow:hidden; position:absolute; right:16px; top:18px; z-index:1; box-sizing:border-box; width:40px; height:40px; text-indent:-9999px; background:url("//img.echosting.cafe24.com/skin/mobile/order/btn_popup_close.svg") 50% 50% no-repeat; }
+#popup.v2 .ec-base-layer .footer { display:flex; gap:4px; padding:16px; text-align:center; align-items:center; justify-content:center; }
+#popup.v2 .ec-base-layer .btnEm { display:inline-block; min-width:60px; height:40px; padding:0 10px; box-sizing:border-box; border:1px solid #1A54F5; border-radius:4px; text-align:center; font-weight:700; font-size:14px; line-height:40px; color:#1A54F5; letter-spacing:0; background:#fff; }
+#popup.v2 .ec-base-layer .btnReset { display:inline-flex; gap:4px; align-items:center; height:40px; padding:0 10px; box-sizing:border-box; font-size:14px; font-weight:700; line-height:40px; color:rgba(0,0,0,0.83); }
+#popup.v2 .ec-base-layer .btnSubmit { display:flex; flex:1; align-items:center; justify-content:center; height:48px; padding:0 14px; box-sizing:border-box; border:1px solid #1A54F5; border-radius:4px; text-align:center; font-weight:700; font-size:13px; line-height:48px; color:#fff; letter-spacing:0; background:#1A54F5; }
+
+#popup.v2 ul.ec-base-help { display:flex; flex-direction:column; gap:2px; }
+#popup.v2 p.ec-base-help,
+#popup.v2 .ec-base-help li { position:relative; display:block; padding:0 0 0 12px; font-size:12px; line-height:20px; color:#616161; }
+#popup.v2 p.ec-base-help:before,
+#popup.v2 .ec-base-help li:before { content:""; position:absolute; top:9px; left:5px; width:2px; height:2px; border-radius:2px; background:#2b2b2b; }
+
+#popup.v2 .ec-base-card.gBorder { padding:10px 16px; border:1px solid #ebebeb; border-radius:16px; background:#fff; }
+#popup.v2 .ec-base-card .card-head { padding:10px 16px; border-radius:16px 16px 0 0; border:1px solid #ebebeb; border-bottom:0; background:#fff; }
+#popup.v2 .ec-base-card .card-head h2 { padding:8px 0; font-weight:700; font-size:14px; line-height:20px; color:#1c1c1c; }
+#popup.v2 .ec-base-card .card-content { padding:12px 16px 16px; border-radius:0 0 16px 16px; border:1px solid #ebebeb;  background:#fff; }
+
+#popup.v2 .ec-base-table table { border:none; }
+#popup.v2 .ec-base-table table tbody { display:flex; flex-direction:column; gap:16px; }
+#popup.v2 .ec-base-table table th { padding:8px 0; text-align:left; color:#1C1C1C; font-weight:500; border:none; background:none; }
+#popup.v2 .ec-base-table table th,
+#popup.v2 .ec-base-table table td { display:block; gap:8px; align-items:center; font-size:13px; line-height:20px; }
+#popup.v2 .ec-base-table table td { width:auto; border:none; word-break:break-all; }
+#popup.v2 .ec-base-table table td .btnBasic { padding:0 6px; display:inline-flex; align-items:center; justify-content:center; height:28px; border:1px solid #BDBDBD; border-radius:4px; font-size:12px; color:#2B2B2B; font-weight:500; background:#fff;}
+
+#popup.v2 .gridSet { display:flex; }
+#popup.v2 .gap8 { gap:8px; }
+#popup.v2 .gMiddle { align-items:center; }
+
+#popup.v2 .icoRequired { display:inline-block; overflow:hidden; width:4px; height:4px; text-indent:150%; vertical-align:middle; background:url('//img.echosting.cafe24.com/skin/mobile/common/bg_required.svg') no-repeat 0 0; background-size:auto 4px; }
+#popup.v2 .ec-base-table.typeWrite th .icoRequired { margin-top:-14px; margin-left:2px; }
+#popup.v2 .innerForm { position:relative; margin:16px 0 0; padding:0 0 0 12px; }
+#popup.v2 .innerForm:before { content:""; position:absolute; top:0; left:0; width:4px; height:100%; background:#0000000D; }
+#popup.v2 .innerForm > dl dt { display:flex; padding:8px 0; gap:2px; font-weight:500; line-height:20px; color:#1c1c1c; }
+#popup.v2 .ec-address { display:flex; flex-direction:column; gap:8px; }
+#popup.v2 .ec-address-zipcode .inputTypeText { flex:1; }
+#popup.v2 .ec-address-zipcode .btnBasic { width:68px; height:36px; margin:0 0 0 4px; font-weight:700; font-size:13px; }
+#popup.v2 .ec-base-mail { display:flex; justify-content: space-between; gap: 4px; align-items: center; }
+
+/* 약관 */
+#popup.v2 .agreementArea .agree { padding:16px; border-radius:16px; font-size:13px; line-height:20px; color:#616161; background:#fff; }
+
+/* 수령지 안내 */
+.pickupLocation dt .name { display:block; padding:4px 0; color:#1C1C1C; font-size:14px; font-weight:700; line-height:20px; }
+.pickupLocation dt .desc { display:block; padding:4px 0; margin-top:4px; color:#757575; font-size:11px; line-height:18px; }
+
+/* 배송 가능 지역 */
+.availableArea { display:flex; flex:1; flex-direction:column; gap:12px; }
+.availableArea .name { display:block; margin:4px 0 0; padding:4px 0; font-weight:700; font-size:14px; line-height:20px; color:#1c1c1c; }
+.availableArea .detail { display:block; margin:4px 0; font-size:11px; line-height:18px; color:#616161; }
+
+/* 쿠폰 */
+#popup.v2 > form { display:flex; flex-direction:column; height:100%; }
+#popup.v2 .xans-coupon-selectnew .prdName { display:block; padding:8px 0; margin-bottom:16px; font-weight:500; color:#1C1C1C; }
+#popup.v2 .xans-coupon-selectnew .selectCoupon { margin-top:8px; }
+#popup.v2 .xans-coupon-selectnew .ordCouponList { display:flex; flex-direction:column; gap:8px; }
+#popup.v2 .xans-coupon-selectnew select { width:296px; }
+#popup.v2 .xans-coupon-aprd.segment + .xans-coupon-aprd.segment { margin-top:16px; }
+
+@media all and (min-width:640px) {
+    #popup.v2 { margin:0 auto; font-size:14px; }
+    #popup.v2 .ec-base-layer .header h1 { padding:16px 28px; font-size:24px; line-height:34px; }
+    #popup.v2 .ec-base-layer .wrap { padding:16px 16px 28px; gap:16px; }
+    #popup.v2 .ec-base-layer .wrap .title h2 { font-size:14px; line-height:20px; }
+    #popup.v2 .ec-base-layer .footer { display:block; }
+
+    #popup.v2 .ec-base-layer .btnSubmit { display:inline-block; min-width:60px; height:40px; vertical-align:top; text-align:center; font-size:14px; line-height:40px; }
+    #popup.v2 .ec-base-layer .btnClose { display:none; }
+    #popup.v2 p.ec-base-help,
+    #popup.v2 .ec-base-help li { font-size:13px; }
+    #popup.v2 .ec-base-table table tr { display:flex; }
+    #popup.v2 .ec-base-table table th,
+    #popup.v2 .ec-base-table table td { gap:8px; align-items:center; font-size:14px; line-height:20px; }
+    #popup.v2 .ec-base-table table th { width:128px; }
+    #popup.v2 .ec-base-table table td { width:calc(100% - 152px); padding-left:24px; }
+    #popup.v2 .ec-base-table table td .btnBasic { margin-left:8px; height:28px; font-size:13px; }
+    #popup.v2 .ec-base-table table .top { vertical-align:top; }
+
+    #popup.v2 .innerForm { padding:0 0 0 28px; }
+
+    #popup.v2 .ec-address-zipcode .btnBasic { width:72px; font-size:14px; }
+
+    /* 약관 */
+    #popup.v2 .agreementArea .agree { font-size:14px; }
+
+    /* 수령지 안내 */
+    .pickupLocation dt .name { font-size:16px; font-weight:700; line-height:24px; }
+    .pickupLocation dt .desc { font-size:12px; line-height:20px; }
+
+    /* 배송 가능 지역 */
+    .availableArea { gap:16px; }
+    .availableArea .name { font-size:16px; }
+    .availableArea .detail { font-size:12px; line-height:20px; }
+
+    /* 쿠폰 */
+    #popup.v2 .xans-coupon-selectnew .benefit { display:block; padding:8px 0 0; }
+
+    /* 레이어 */
+    #popup.v2 #zipcodeLayer { position:fixed !important; top:50% !important; left:50% !important; transform:translate(-50%, -50%); z-index:9999; overflow:hidden; width:600px; height:693px; border-radius:16px; box-shadow:0px 8px 16px 0px rgba(0, 0, 0, 0.20), 0px 0px 2px 0px rgba(0, 0, 0, 0.05); }
+
+}

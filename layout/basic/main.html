@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no"> <!-- 반응형을 위한 뷰포트 설정 -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- PG크로스브라우징필수내용 -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <!-- // PG크로스브라우징필수내용 -->
+    
+    <!-- 웹아이콘 -->
+    <!--link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"-->
+    <link rel="stylesheet" href="/web/upload/goodymall/css/xeiconmin.css">
+
+    <!-- 파비콘 ico 
+    <link rel="shortcut icon" href="/web/upload/favicon/favicon.ico"> -->
+    
+    <!-- 홈페이지 사용 폰트:: 대부분 구글 웹 폰트를 사용합니다  -->
+    <link rel="preconnect" href="//fonts.googleapis.com">
+	<link href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>{$mall_name}</title>
+    <!--@css(/layout/basic/css/common.css)--> <!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요 :: 수정 시 주의요망 -->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/gd_import/css/layout.css)--> <!-- 강남대로365 추가 CSS :: 사이트 디자인에 사용된 대부분의 css는 해당 파일에서 수정하실 수 있습니다 :: 수정 시 주의요망 -->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)--> <!-- 상품관련 CSS :: 상품진열과 관련된 css는 해당 파일에서 수정하실 수 있습니다 :: 수정 시 주의요망 -->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-desc.css)-->
+    <!--@css(/gd_import/css/relation.css)--> <!-- 강남대로365 추가 CSS :: 창 축소시 사용된 대부분의 css는 해당 파일에서 수정하실 수 있습니다 --> 
+
+    <!--@js(/gd_import/js/basic.js)-->
+    <!--@js(/layout/basic/js/basic.js)-->
+    <!--@js(/js/common.js)-->
+    <!--@js(/js/module/layout/quick_view.js)-->
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="/gd_import/css/swiper.min.css">
+    <script src="/gd_import/js/swiper.min.js"></script>    
+    
+    <!-- 타임세일 -->
+    <script src="/gd_import/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">window.jQuery3_4_1 = jQuery.noConflict(true);</script>
+    <link href="/gd_import/css/time_banner.css" rel="stylesheet">    
+    <script src="/gd_import/js/time_banner.js"></script>   
+    
+</head>
+<body id="main">
+     
+    <!-- Google Tag Manager (noscript) gangnam365-->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS2GN9VV"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    
+<div id="skipNavigation">
+    <p><a href="#category">전체상품목록 바로가기</a></p>
+    <p><a href="#contents">본문 바로가기</a></p>
+</div>
+        
+  
+    <!---------------------------------------------------------------------------------------------------------------------------
+        ■ 좌측 픽스 배너 영역 ■
+        ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+    ---------------------------------------------------------------------------------------------------------------------------->
+    <!-- @import(/gd_import/left_fix.html)-->
+        
+    <!---------------------------------------------------------------------------------------------------------------------------
+        ■ 우측 픽스 배너 영역 ■
+        ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+    ---------------------------------------------------------------------------------------------------------------------------->
+    <!-- @import(/gd_import/right_fix.html)-->
+
+    
+    <div id="wrap">  
+            <!---------------------------------------------------------------------------------------------------------------------------
+            ■ 추가 팝업 ■
+            ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+            ---------------------------------------------------------------------------------------------------------------------------->
+            <!--@import(/gd_import/popup.html)-- >
+
+            <!---------------------------------------------------------------------------------------------------------------------------
+            ■ 탑배너 ■
+            ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+            ---------------------------------------------------------------------------------------------------------------------------->
+            <!--@import(/gd_import/top_banner.html)-->
+
+            <!----------------------------------------------------------------------
+            ■ 상단 메뉴 ■
+            ※ 로고 및 상단 수동 카테고리 수정 위치
+            ----------------------------------------------------------------------->
+            <!--@import(/gd_import/header.html)-->
+
+            <!---------------------------------------------------------------------------------------------------------------------------
+            ■ 메인슬라이드 ■
+
+            ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+            ※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+            ---------------------------------------------------------------------------------------------------------------------------->
+            <!--@import(/gd_import/main_slide.html)-->
+
+            <div id="container">
+                <!--@contents-->
+            </div><hr class="layout" />
+
+        <div id="footer">
+            <!-----------------------------------------------------------------------------------
+            ■ footer 정보 수정시 아래의 html파일에서 [파일열기] 클릭 후 수정하시면 됩니다. ■
+
+            ※ 홈페이지 최 하단 회사정보는 해당 파일에서 수정하실 수 있습니다
+                : 계좌번호, 연락처, 운영시간 등등
+            ------------------------------------------------------------------------------------->
+            <!--@import(/gd_import/footer.html)-->   
+        </div>
+    </div><hr class="layout" /> <!-- wrap 끝 -->    
+    
+    
+<!-- 결제를 위한 필수 영역 -->
+<div id="progressPaybar" style="display:none;">
+    <div id="progressPaybarBackground" class="layerProgress"></div>
+    <div id="progressPaybarView">
+        <div class="box">
+            <p class="graph">
+                <span><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/txt_progress.gif" alt="현재 결제가 진행중입니다." /></span>
+                <span><img src="//img.echosting.cafe24.com/skin/base/layout/img_loading.gif" alt="" /></span>
+            </p>
+            <p class="txt">
+                본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br />
+                주문이 되지 않으니 결제 완료 될 때 까지 닫지 마시기 바랍니다.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- // 결제를 위한 필수 영역 -->
+
+<div module="Layout_multishopShipping">
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/css/module/layout/multishopShipping.css)-->
+    <!--@js(/js/module/layout/multishopShipping.js)-->
+    <div class="dimmed"></div>
+    <div class="worldshipLayer ec-base-layer">
+        <div class="header">
+            <h3>WORLD SHIPPING</h3>
+        </div>
+        <div class="content">
+            <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+            <div class="select">
+                <select module="Layout_multishopShippingCountrylist">
+                    <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                    <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+                </select>
+            </div>
+            <div class="select">
+                <select module="Layout_multishopShippingLanguagelist">
+                    <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                    <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+                </select>
+            </div>
+        </div>
+        <div class="ec-base-button">
+            <a href="#none" class="btnSubmitFix sizeS">GO</a>
+        </div>
+        <a href="#none" class="close"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" width="13" height="13" alt="close" /></a>
+    </div>
+</div>
+
+<div module="Layout_conversionPc">
+    <!--@css(/css/module/layout/conversionpc.css)-->
+    <a href="{$mobile_url}">모바일 화면보기</a>
+</div>
+</body>
+</html>

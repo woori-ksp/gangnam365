@@ -1,0 +1,25 @@
+#userStyle #header .titleArea h1 { background: #000; } 
+#userStyle #header .headerMenu .btnBasket .count { background:#000; }
+#userStyle #titleArea > h1 { background:#000; }
+#userStyle #mCafe24Order .totalPay.paymentPrice { background: #f8f8f8; }
+#userStyle #mCafe24Order .txtStrong { color: #000; }
+#userStyle #mCafe24Order .ec-paymethod-input-detail #payment_input_cash, 
+#userStyle #mCafe24Order .ec-paymethod-input-detail #payment_input_tcash, 
+#userStyle #mCafe24Order .ec-paymethod-input-detail #payment_input_icash { background:#f8f9fa; }
+#userStyle #mCafe24Order .agreeArea .checkNone ul { background:#f8f9fa; }
+#userStyle #mCafe24Order .payMethod > li .inner > .ec-base-label > input:checked ~ label { border: 1px solid #000; color: #000; }
+#userStyle #orderFixItem.ec-base-button.gFull [class*="btn"] { background-color: #000; }
+
+#userStyle #mCafe24Order .ec-base-layer.typeWide h1 { background:#000; }
+#userStyle #mCafe24Order .ec-base-layer.typeWide .wrap .title h2 { font-size:16px; }
+
+#userStyle #mCafe24Order .resultArea .message { background: url(/web/upload/goodymall/kr/layout/ico_resultarea_message.png) no-repeat center 0; background-size: 38px 42px; }
+#userStyle #mCafe24Order .txtEm { color:#000; }
+#userStyle #mCafe24Order.xans-order-result .orderArea .totalPrice .title { background:#f8f9fa; }
+#userStyle #mCafe24Order.xans-order-result .totalPay { background:#f8f9fa; }
+#userStyle #mCafe24Order.xans-order-result .btnSubmit { background:#000; }
+
+
+@media screen and (max-width: 767px) {
+    #userStyle #mCafe24Order .resultArea { margin: 80px 14px 24px; }
+}

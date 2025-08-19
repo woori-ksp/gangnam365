@@ -1,0 +1,15 @@
+.xans-myshop-orderhistorynologin.ec-base-box.typeThin { padding:49px 8px; border: 0;}
+.xans-myshop-orderhistorynologin { position:relative; border:1px solid #d7d5d5; padding:49px 0 39px; color:#2e2e2e; }
+.xans-myshop-orderhistorynologin p { width:100%; max-width:360px; margin:0 auto 15px; color:#555; font-size: 13px; }
+.xans-myshop-orderhistorynologin .ec-base-desc { width:100%; max-width:360px; margin:0 auto; }
+.xans-myshop-orderhistorynologin input[type=text],
+.xans-myshop-orderhistorynologin input[type=password] { /*width:179px;*/ width:57%; height:26px; }
+.xans-myshop-orderhistorynologin .button { width:330px; margin:10px auto 0; text-align:center; }
+.xans-myshop-orderhistorynologin .ec-base-button[class*="gColumn"] [class^='btn'] { margin:0; }
+.xans-myshop-orderhistorynologin .ec-base-desc dt { width:40%; line-height:33px; font-size: 13px; }
+.xans-myshop-orderhistorynologin .ec-base-desc dd { /*padding: 0 0 3px 155px;*/ padding:0; }
+
+.xans-myshop-orderhistorynologin .btnLoginquiry { height:48px; line-height:48px; width: 100%; display:inline-block; position: relative; margin:16px 0; border: 1px solid #000; background-color: #000; border-radius:2px; font-size: 16px; font-weight: 400; color: #fff; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; z-index: 1;}
+.xans-myshop-orderhistorynologin .btnLoginquiry:after { content: ""; width: 0%; height: 100%; position: absolute; top: 0; left: 0; background: #fff; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.xans-myshop-orderhistorynologin .btnLoginquiry:hover { color: #000; }
+.xans-myshop-orderhistorynologin .btnLoginquiry:hover:after { width: 100%; z-index: -1;}

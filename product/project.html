@@ -1,0 +1,38 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Project_Package">
+    <!--@css(/css/module/product/project_package.css)-->
+    <div class="path" module="project_head">
+        <span>현재 위치</span>
+        <ol>
+            <li><a href="/">홈</a></li>
+            <li title="현재 위치"><strong>기획전</strong></li>
+        </ol>
+    </div>
+
+    <div class="title" module="product_headcategory">
+        <p class="banner">{$top_image_tag}</p>
+        <h2>{$title_text_or_image}</h2>
+    </div>
+
+
+    <ul class="menuCategory">
+        <li module="product_projectcategory" style="display:{$display};">
+            <a href="#{$cate_id}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+        </li>
+    </ul>
+
+    <div module="project_list">
+        <!--
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <h3><span id="{$cate_id}">{$category_name}</span></h3>
+
+
+        <div module="project_productlist" class="ec-base-product">
+            <ul class="prdList grid4">
+                <!--@import(/gd_import/prdListPj.html)-->
+            </ul>
+        </div>
+    </div>
+</div>

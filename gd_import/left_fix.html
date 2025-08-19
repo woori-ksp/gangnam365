@@ -1,0 +1,40 @@
+<div id="left_wrap">  
+    <div class="left_fix_img">
+        <a href="/"><img src="/web/upload/goodymall/kr/main/logo.png" alt="logo" /></a>
+        <div class="tet_box">
+            <p><span>365</span>일<span>FRESH!</span><br/>
+                이제 집에서 건강과 아름다움을 만나요<br/>
+                </p>
+        </div>
+    </div>
+
+    <div class="left_search">
+        <!-- * 검색창영역 * -->
+        <div module="Layout_SearchHeader">
+            <!--@css(/css/module/layout/searchHeader.css)--> <!-- * 검색창 영역의 css를 변경하실 수 있습니다 _ 컬러변경 * -->
+            <!--
+                $product_page=/product/detail.html
+                $category_page=/product/list.html
+            -->
+            <fieldset>
+                <legend>검색</legend>
+                {$form.keyword}<i class="xi-search" onclick="{$action_search_submit}"></i>
+            </fieldset>
+        </div> 
+
+        <div class="bestKeyword" module="search_hotkeyword">
+            <div class="tit">인기 검색어 </div>
+            <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+            <a href="{$hot_keyword_url}">{$hot_keyword_name}</a>
+        </div>
+    </div>
+
+    <!--div class="left_download">
+        <h3>어플 다운로드</h3>
+        <p>아래 버튼을 클릭하여 다운로드 받으세요</p>
+        <div class="download">
+            <span><a href="//www.apple.com/kr/app-store" target="_blank"><img src="/web/upload/goodymall/kr/main/btn_appstore.png" alt="앱스토어다운버튼" /></a></span>
+            <span><a href="//play.google.com" target="_blank"><img src="/web/upload/goodymall/kr/main/btn_googleplay.png" alt="플레이스토어다운버튼" /></a></span>
+        </div>
+    </div-->
+</div>

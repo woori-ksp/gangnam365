@@ -1,0 +1,128 @@
+<!--@css(/layout/sidebar.css)-->
+<!--@js(/layout/basic/js/slide_menu.js)-->
+
+<aside id="aside" module="layout_slide" class="slidingMenu">
+    
+    <!-- * 멀티샵 아이콘 생성 시 위치 * -->
+    <div class="multishop" module="Layout_multishopList" id="slideMultishopList">
+        <ul module="multishop_listitem">
+            <li>
+                <a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a>
+            </li>
+            <li>
+                <a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="top_section">    
+        <div module="Layout_stateLogon" class="member">
+            <p><a href="/myshop/index.html">반갑습니다. <span class="log_name">{$name}</span> 님</a></p>
+        	<p><a href="{$action_logout}">로그아웃 <i class="xi-angle-right-min"></i></a></p>
+        </div>
+        <div module="Layout_stateLogoff" class="member">
+            <p><a href="/member/login.html">로그인이 필요합니다. <i class="xi-angle-right-min"></i></a></p>
+            <p><a href="/member/join.html">회원가입 <i class="xi-angle-right-min"></i></a></p>
+        </div>    
+        <ul module="Layout_shoppingInfo" class="membership">
+            <li>{$deposit_name} : <a href="/myshop/deposits/historyList.html">{$total_deposit}</a></li>
+            <li>{$mileage_name} : <a href="/myshop/mileage/historyList.html">{$mileage}</a></li>
+            <li>쿠폰 : <a href="/myshop/coupon/coupon.html">{$coupon_cnt}</a></li>
+        </ul>    
+    </div>
+        
+    <div module="myshop_main">
+        <span class="icon"><a href="/myshop/index.html"><i class="xi-user-o"></i>마이페이지</a></span>
+        <span class="icon"><a href="/myshop/wish_list.html" class="wishList"><i class="xi-heart-o"></i>관심상품({$wish_count})</a></span>
+        <span class="icon"><a href="/product/recent_view_product.html" class="recentList"><i class="xi-time-o"></i>최근본상품({$recent_count})</a></span>
+        <span class="icon"><a href="/myshop/order/list.html" class="orderList"><i class="xi-document"></i>주문조회</a></span>
+    </div>
+
+    <div class="cateWrap">
+        <div id="slideCateList" class="categoryCont">
+        	<!-- ** 슬라이드 메뉴 바 카테고리 영역 ** -->
+            <!--h2 class="selected">카테고리<button type="button" class="icoCategory">펼침</button></h2-->
+            <ul module="layout_category" class="categoryList">
+                <li id="cate{$cate_no}">
+                    <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                    <a href="{$link_product_list}" class="view">view</a>
+                    <button type="button" class="icoBookmark" id="icoBookmark">즐겨찾기 추가</button>
+                </li>
+                <li id="cate{$cate_no}">
+                    <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                    <a href="{$link_product_list}" class="view">view</a>
+                    <button type="button" class="icoBookmark" id="icoBookmark">즐겨찾기 추가</button>
+                </li>
+            </ul>
+            
+            <div id="slideProjectList" module="layout_project" class="projectCont">
+                <h2 class="">기획전<button type="button" class="icoCategory">펼침</button></h2>
+                <ul class="categoryList">
+                    <li id="cate{$cate_no}">
+                        <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                    </li>
+                    <li id="cate{$cate_no}">
+                        <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--div class="bookmarkCategory" id="bookmarkCategory">
+                <h2 class="selected">즐겨찾기<button type="button" class="icoCategory">펼침</button></h2>
+                <p class="bookmarkEmpty" id="bookmarkEmpty">자주쓰는 카테고리 우측에 <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_bookmark_star.png" alt="즐겨찾기"> 을 눌러주세요.<br>쉽게 카테고리를 이용할 수 있습니다.</p>
+                <div id="bookmartCateArea" class="bookmarkCategory"></div>
+            </div>
+            <div class="multishop" module="Layout_multishopList" id="slideMultishopList">
+                <h2 class="selected countryTitle">SHIP TO<button type="button" class="icoCategory">펼침</button></h2>
+                <ul module="Layout_multishopListmultioptionCountry" class="xans-element- xans-multishop xans-multishop-listitem">
+                    <li>
+                        <a href="#none" class="countryLink"></a>
+                    </li>
+                </ul>
+                <h2 class="selected languageTitle">LANGUAGE<button type="button" class="icoCategory">펼침</button></h2>
+                <ul module="Layout_multishopListmultioptionLanguage" class="xans-multishop xans-multishop-listitem">
+                    <li>
+                        <a href="#none" class="languageLink">
+                            <span class="name"> {$language_name}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div-->
+        </div>
+
+        <!-- 카테고리 자동모듈 - 게시판메뉴 -->
+        <div id="slideCateList" class="categoryCont">
+            <p class="selected">커뮤니티<button type="button" class="icoCategory">펼침</button></p>
+            <ul module="Layout_BoardInfo" class="boardList">
+                <li><a href="{$board_list_url}" class="cate2">{$board_name}</a></li>
+                <li><a href="{$board_list_url}" class="cate2">{$board_name}</a></li>
+                <li module="Layout_sosBanner"><a href="/board/urgency/urgency.html" class="cate2">긴급 문의</a></li>
+                <li module="Layout_calendarBanner"><a href="{$calendar_view_page}" class="cate2">캘린더 게시판</a><li>
+            </ul>
+        </div>
+    </div> <!-- cateWrap 끝 --> 
+    
+    <!-- 푸터영역 고객센터 정보가 자동으로 적용됩니다 :: 수정 x -->
+    <div class="side_cs"></div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6120774261368234"
+     crossorigin="anonymous"></script>
+<!-- 강남대로365 쇼핑몰_수평형 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:100%;height:60px"
+     data-ad-client="ca-pub-6120774261368234"
+     data-ad-slot="4006393306"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    
+    <!---------------------------------------------------------------------------------------------------------------------------
+    ■ 이벤트영역 ■
+
+    ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+    ※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+    ---------------------------------------------------------------------------------------------------------------------------->    
+    <!--@import(/gd_import/event_banner.html)-- >
+        
+    <a href="#none" class="btnClose"><i class="xi-close"></i></a>
+</aside>

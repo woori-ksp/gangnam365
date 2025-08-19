@@ -1,0 +1,43 @@
+<!--@layout(/layout/basic/board_layout.html)-->
+
+<div class="path" style="padding-right:16px;">
+    <span>현재 위치</span>
+    <ol>
+        <li><a href="/">홈</a></li>
+        <li title="현재 위치"><strong>커뮤니티</strong></li>
+    </ol>
+</div>
+
+<div class="titleArea">
+    <h2>커뮤니티</h2>
+</div>
+
+<div module="board_mainPackage">
+    <!--@css(/css/module/layout/boardInfo.css)-->
+    <div module="Layout_BoardInfo">
+        <ul>
+            <li><a href="{$link_board_list}">{$board_name}</a></li>
+            <li><a href="{$link_board_list}">{$board_name}</a></li>
+            <li><a href="{$link_board_list}">{$board_name}</a></li>
+            <li><a href="{$link_board_list}">{$board_name}</a></li>
+        </ul>
+    </div>
+
+    <div module="Layout_opdiaryBanner">
+        <ul>
+            <li><a href="/board/opdiary/list.html?board_no=11">운영일지</a></li>
+        </ul>
+    </div>
+
+    <div module="Layout_sosBanner">
+        <ul>
+            <li><a href="/board/urgency/urgency.html">긴급문의</a></li>
+        </ul>
+    </div>
+
+    <div module="Layout_calendarBanner">
+        <ul>
+            <li><a href="{$calendar_view_page}">캘린더 게시판</a><li>
+        </ul>
+    </div>   
+</div>

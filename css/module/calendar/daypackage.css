@@ -1,0 +1,17 @@
+.xans-calendar-headday { position:relative; text-align:center; }
+.xans-calendar-headday .date { display:inline; color:#333; font-size:24px; letter-spacing:-1px; }
+.xans-calendar-headday .date img { vertical-align:middle; }
+.xans-calendar-headday .button { position:absolute; right:0; top:0px; }
+
+.xans-calendar-listdayhead th { padding:8px 0; color:#555; border-top:1px solid #ddd; }
+
+.xans-calendar-daypackage .calendar { margin:20px 0 0; }
+.xans-calendar-listday th,
+.xans-calendar-listday td { padding:5px; border:1px solid #eee; background:#fcfcfc; color:#555; font-weight:normal; vertical-align:middle;  line-height:1.6; }
+.xans-calendar-listday th { text-align:center; color:#555; font-weight:normal; }
+.xans-calendar-listday td li a,
+.xans-calendar-listday td li a:hover { color:#555; }
+
+@media all and (max-width:767px){
+	.xans-calendar-daypackage .ec-base-tab .menu li { width: calc(33.333% - 10px); }
+}

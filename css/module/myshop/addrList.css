@@ -1,0 +1,19 @@
+.xans-myshop-addrlist { position:relative; margin:14px 7px 0; padding:0 0 29px; background:#fff; }
+.xans-myshop-addrlist h3 { padding:0 14px; line-height:43px; font-size:14px; font-weight:400; color:#222; background:#fcfcfc; border: 1px solid #ddd; border-width: 1px 0; }
+
+/* 리스트 */
+.xans-myshop-addrlist .addList { }
+.xans-myshop-addrlist .description { position:relative; border-bottom:1px solid #eee; }
+.xans-myshop-addrlist p { padding:0 14px; }
+.xans-myshop-addrlist .name { font-size:13px; line-height:43px; }
+.xans-myshop-addrlist .name span { color:#222; font-weight: 400; }
+.xans-myshop-addrlist .info { padding:14px 0; font-size:13px; background:#fff; }
+.xans-myshop-addrlist .info .number { margin:5px 0 0; color:#757575; }
+.xans-myshop-addrlist .info .number span.line { position:relative; display:inline-block; margin:0 14px; width:1px; height:13px; }
+.xans-myshop-addrlist .info .number span.line:before { display:block; content:""; position:absolute; top:1px; left:0; width:1px; height:13px; background:#989899; }
+.xans-myshop-addrlist .empty { margin:14px auto 0; font-size:13px; text-align:center; }
+.xans-myshop-addrlist .button { position:absolute; top:7px; right:14px; z-index:10; }
+.xans-myshop-addrlist .button a { font-size:11px; }
+.xans-myshop-addrlist .btnAdd { position:absolute; top:7px; right:14px; z-index:10; }
+.xans-myshop-addrlist .btnAdd a { font-size:12px; }
+.xans-myshop-addrlist .ec-base-button { margin:0; padding:0 14px 14px; background:#fff; text-align:right; }

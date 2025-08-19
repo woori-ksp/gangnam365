@@ -1,0 +1,26 @@
+/* 멀티샵 토글 */
+.xans-layout-multishoplist.list { float:left; position:relative; z-index:10; height:40px; }
+.xans-layout-multishoplist.list .toggle { display:block; height:40px; padding:0 0 0 8px; color:#777; line-height:40px; font-size:13px; font-weight:300; font-family:'Noto Sans KR',serif; background:#fff; /*background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 17px;*/ }
+.xans-layout-multishoplist.list .toggle span { font-weight: 300; padding:0 25px 0 0; background:url("//img.echosting.cafe24.com/skin/base/layout/ico_multishop1.png") no-repeat 100% 8px; }
+.xans-layout-multishoplist.list .toggle span > img { vertical-align:middle }
+
+.xans-layout-multishoplist.list > ul { display:none; position:absolute; right:0; width:128px; border:1px solid #ddd; background:#fff; }
+.xans-layout-multishoplist.list > ul li { position:relative; height:32px; margin:0; line-height:32px; }
+.xans-layout-multishoplist.list > ul li a { display:block; overflow:hidden; padding:0 62px 0 10px; color:#555; white-space:nowrap; text-decoration:none; text-overflow:ellipsis; background:url("//img.echosting.cafe24.com/skin/base/layout/ico_multishop2.png") no-repeat 100% -29px; }
+.xans-layout-multishoplist.list > ul li.selected a { background:#fff url("//img.echosting.cafe24.com/skin/base/layout/ico_multishop2.png") no-repeat 100% 11px; }
+.xans-layout-multishoplist.list > ul li a img { position:absolute; left:10px; top:9px; }
+.xans-layout-multishoplist.list > ul li a .name strong { font-weight:normal; }
+.xans-layout-multishoplist.list > ul li a .unit { position:absolute; right:32px; top:0; font-size:11px; color:#777; }
+.xans-layout-multishoplist.list.show > ul { display:block; }
+
+/* 멀티샵 아이콘 */
+.xans-layout-multishoplist.thumb { float:left; }
+.xans-layout-multishoplist.thumb > ul { overflow:hidden; display:flex; align-items:center; height:40px;}
+.xans-layout-multishoplist.thumb > ul li { /*float:left;*/ width:24px; margin:0 4px 0 0; }
+.xans-layout-multishoplist.thumb > ul li a { text-decoration:none; }
+.xans-layout-multishoplist.thumb > ul li a img {width:100%;}
+.xans-layout-multishoplist .multiOption a { display:inline-block; height:24px; line-height:24px; color:#666; }
+.xans-layout-multishoplist .multiOption a:hover { text-decoration:none; }
+.xans-layout-multishoplist .multiOption .ship,
+.xans-layout-multishoplist .multiOption .language { margin:0 15px 0 0; }
+.xans-layout-multishoplist .multiOption .language img { margin:0 6px 0 1px; }

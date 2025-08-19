@@ -1,0 +1,14 @@
+.xans-product-recentlist table { font-size: 14px; }
+.xans-product-recentlist.ec-base-table .right { text-align: center; }
+.xans-product-recentlist table td.product strong { display:block; color:#000; }
+.xans-product-recentlist table td.image { text-align: center; }
+.xans-product-recentlist table td.image img { max-width:80px; border-radius: 10px; }
+.xans-product-recentlist table td .xans-product-setproduct { margin:5px 0 0; }
+.xans-product-recentlist table td .xans-product-setproduct li { margin:2px 0 0; color:#757575; }
+.xans-product-recentlist table td .mileage { display: block; }
+.xans-product-recentlist table td.button a { width:64px; margin:1px 0; }
+
+.xans-product-recentlist .prd_img { width:100px; }
+.xans-product-recentlist .prd_info {  }
+.xans-product-recentlist .prd_price { width:24%; }
+.xans-product-recentlist .prd_choice { width:64px; }

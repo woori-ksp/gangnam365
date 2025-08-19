@@ -1,0 +1,13 @@
+.xans-myshop-summary { margin:14px 7px; font-size:14px; }
+.xans-myshop-summary h3 { padding:14px; font-size:14px; line-height:1.2em; color:#222; background:#fcfcfc; border: 1px solid #ddd; border-width: 1px 0; }
+.xans-myshop-summary .ec-base-table { border-width: 1px 0; }
+.xans-myshop-summary .ec-base-table th, .xans-myshop-summary .ec-base-table td { border-top: 1px dotted #eee; }
+
+/* 관련 링크 */
+.xans-myshop-mileagepackage .navigation { padding:0 7px 14px; }
+.xans-myshop-mileagepackage .navigation ul { border:1px solid #ddd; border-width: 1px 0; }
+.xans-myshop-mileagepackage .navigation li { background:#fcfcfc; border-top:1px dotted #eee; }
+.xans-myshop-mileagepackage .navigation li:first-child { border-top:0; }
+.xans-myshop-mileagepackage .navigation li a { display:block; position:relative; padding:14px; font-weight:400; font-size:14px; line-height:1.2em; color:#222; }
+.xans-myshop-mileagepackage .navigation li a:after { display:block; content:""; width:20px; height:20px; position:absolute; top:12px; right:12px;
+    background: url("/web/upload/goodymall/kr/layout/btn_more_board.png") no-repeat scroll 97% 50%; background-size: 13px 25px; }

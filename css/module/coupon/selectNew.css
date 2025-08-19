@@ -1,0 +1,34 @@
+#popup { width:100%; max-width:800px; }
+/*.xans-coupon-selectnew .title { margin:20px 0 10px; }*/
+.xans-coupon-selectnew .title h3 { color:#353535; font-size:12px; }
+
+.xans-coupon-selectnew .ec-base-table td.thumb img { max-width:80px; }
+.xans-coupon-selectnew .ec-base-table td div.option  { margin:9px 0 0; color:#707070; line-height:16px; }
+.xans-coupon-selectnew .ec-base-table td div.type { margin:9px 0 0; line-height:16px; }
+.xans-coupon-selectnew .ec-base-table td.select select { max-width:100%; }
+
+.xans-coupon-selectnew .ec-base-table.total table { border:1px solid #777; }
+.xans-coupon-selectnew .ec-base-table.total tfoot td .total { margin:0 0 0 15px; }
+.xans-coupon-selectnew .ec-base-table.total td .box { min-height:40px; line-height:2; word-break:normal; }
+.xans-coupon-selectnew .ec-base-table.total td .txt23 { font-size:23px; letter-spacing:-1px; }
+.xans-coupon-selectnew .ec-base-table.total .detail td { height:auto; line-height:inherit; font-size:12px; color:#707070; }
+.xans-coupon-selectnew .ec-base-table.total .detail li { margin:0 0 3px; padding:0 0 0 9px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_dash.gif") no-repeat 0 7px; }
+.xans-coupon-selectnew .ec-base-table.total .detail td li select { width:100%; }
+
+
+
+
+.titleArea h1 { background:#000; }
+.headerMenu .btnBasket .count { background: #000; }
+
+
+.ec-base-fold { border: 0 !important;}
+.ec-base-fold.theme2 > .title { padding:0; align-items : center; }
+.ec-base-fold.theme2 > .title h2 { padding: 16px 14px; font-size: 14px; font-weight: 400; }
+.pannelArea .title h2 { padding: 16px 14px; font-size: 14px; font-weight: 400; background:#fff; border-bottom:1px dashed #eee;}
+
+.ordCouponList { padding:0 0 16px; }
+.ordCouponList > li { padding: 8px 14px; }
+.ordCouponList select { height: 36px; width: 100%; padding: 0 20px 0 10px; }
+
+.ec-base-layer h1 { padding: 7px 35px 7px 19px; background: #eee; color: #000; font-size: 14px; line-height: 1.5; font-weight: 400; }

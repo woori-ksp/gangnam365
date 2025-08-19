@@ -1,0 +1,22 @@
+.xans-mall-company h3 { margin:30px 0 10px 10px; color:#353535; font-size:12px; }
+.xans-mall-company .xans-layout-footer.ec-base-table { float:none; width:auto; height:auto; margin-bottom:30px; font-size: 14px; }
+
+/* 회사소개 - 굿디몰 추가 */
+.comNotice { border: 1px solid #ddd; margin: 0 auto; padding: 16px 24px; box-sizing: border-box;}
+.comNotice .com_notice { font-size: 14px; line-height: 28px; font-weight: 300;}
+.comNotice .com_notice span { background: #ffef00; font-weight: 400;}
+
+.comArea { position: relative; overflow: hidden; width:100%; max-width: 1070px; margin: 0 auto 20px; padding:0 16px; color: #444; font-size: 14px; line-height: 20px; text-align: center; box-sizing:border-box; }
+.comArea a:hover { text-decoration: none; }
+.comArea .box { margin: 0 0 80px; box-sizing: border-box; }
+.com_info { margin: 60px 0 80px;}
+.com_info .tit { color: #222; font-size: 32px; line-height: 40px; font-weight: 700;}
+.com_info .con {font-size: 16px; line-height: 24px; color: #333; font-weight: 400; margin: 20px 0 0;}
+
+.com_txt { margin: 0 auto 80px; vertical-align: top;}
+.com_txt .tit { position: relative; font-size: 24px;  font-weight: 500; color:#333;  margin:0 0 20px; line-height:32px; word-spacing:-.5px;}
+.com_txt .tit span {color: #f26522; font-weight: 700;}
+.com_txt .con { font-size: 14px; line-height: 24px; font-weight: 400;  color: #555; }
+
+.com_img { max-width: 1000px; margin: 0 auto; }
+.com_img img { width: 100%; }

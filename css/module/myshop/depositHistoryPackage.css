@@ -1,0 +1,13 @@
+.xans-myshop-depositsummary { border: 1px solid #ddd;  border-width: 1px 0; }
+.xans-myshop-depositsummary ul:after { content:""; display:block; clear:both; }
+.xans-myshop-depositsummary ul li { float:left; margin:5px 0; padding:0 45px; width:50%; height:20px; font-size:14px; line-height:1.6; vertical-align:top; box-sizing:border-box; }
+.xans-myshop-depositsummary .title { float:left; width:48%; font-weight:normal; box-sizing:border-box; }
+.xans-myshop-depositsummary .data { float:left; width:52%; padding:0 10px; text-align:right; box-sizing:border-box; }
+
+@media all and (max-width: 1023px) {
+	.xans-myshop-depositsummary ul li { padding:0 15px; }
+}
+
+@media all and (max-width:767px){
+	.xans-myshop-depositsummary ul li { float:none; width:100%; }
+}

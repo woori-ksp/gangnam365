@@ -1,0 +1,4 @@
+#header .top_state .xans-layout-shoppinginfo { height:40px; line-height:40px; }
+#header .top_state .xans-layout-shoppinginfo li { float:left; padding:0 8px; /*background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 12px;*/ }
+#header .top_state .xans-layout-shoppinginfo li a { color:#777; font-size:13px; font-weight:300; }
+#header .top_state .xans-layout-shoppinginfo li a:hover { color:#adadad;}

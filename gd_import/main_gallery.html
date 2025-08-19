@@ -1,0 +1,43 @@
+<div class="mainGallery mg_60" module="board_listpackage_8"> 
+    <div class="inner">
+        <!----------------------------------------------------------------------------------------------------------
+
+            	module="board_list< 는 해당 게시판의 일반게시글을 끌어오는 소스입니다.	
+            	module="board_notice < 로 변경하시면 해당 게시판에서 공지사항으로 체크된 게시글이 노출됩니다.
+            	※ notice로 변경하실 경우, 공지사항으로 체크된 게시글이 없다면 메인에 노출되지 않습니다.
+
+		-----------------------------------------------------------------------------------------------------------> 
+        <div module="board_list_8" class="galleryList">
+            <div module="board_title_8" class="main_title">
+                <h2>
+                    <span>{$board_name}</span>
+                    <span class="sub">{$board_info}</span>                
+                </h2>
+                <a href="/board/gallery/list.html?board_no=8" class="more_btn">전체보기</a> 
+            </div>
+            <div>
+                <!--
+                    $count = 3
+                    $login_page_url = /member/login.html
+                    $deny_access_url = /index.html
+                -->	
+                <ul class="galleryGrid"> 
+                    <li>    
+                        <!--div class="txt">  
+                            <h3 class="subject"><a href="{$link_board_detail}">{$subject}</a></h3>
+                            <p class="cont">{$content|striptag}</p>
+                        </div-->                    
+                        <div class="imgLink img_zoom round"><a href="{$link_board_detail}"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+                    </li>  
+                    <li>       
+                        <!--div class="txt">  
+                            <h3 class="subject"><a href="{$link_board_detail}">{$subject}</a></h3>
+                            <p class="cont">{$content|striptag}</p>
+                        </div-->                 
+                        <div class="imgLink img_zoom round"><a href="{$link_board_detail}"><img src="{$img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+                    </li> 
+                </ul>
+            </div>
+        </div> 
+    </div> <!-- inner 끝 -->
+</div> 

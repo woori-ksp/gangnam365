@@ -1,0 +1,59 @@
+/* ************************************** *
+ * NotoSansKR
+ * ************************************** */
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/ind-script/admin/font/NotoSansKR-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/ind-script/admin/font/NotoSansKR-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/ind-script/admin/font/NotoSansKR-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/ind-script/admin/font/NotoSansKR-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/ind-script/admin/font/NotoSansKR-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/ind-script/admin/font/NotoSansKR-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.xans-order-agreementsubscription .agree { overflow:auto; display:block; height:429px; margin:0 auto; padding:15px 15px 18px; line-height:1.5; border:1px solid #d9d9d9; }
+#payReqForm, #paySSLForm { height:0; }
+
+/* 주문서 약관 공통 */
+#popup { width:100%; font-family:'NotoSansKR',"맑은 고딕",Malgun Gothic,AppleSDGothicNeo,"돋움",Dotum,sans-serif; font-weight: 400; }
+#popup .wrap > textarea,
+#popup .agree > textarea { overflow:auto; display:block; width:100%; height:429px; margin:0 auto; padding:0; line-height:1.5; border:0; }
+#popup .wrap { overflow: auto; display: block; height: auto; margin: 0 auto; padding: 15px 15px 18px; line-height: 1.5; }
+#popup .wrap > textarea { border:1px solid #d9d9d9; padding: 15px 15px 18px; }
+#popup .ec-base-layer { position:relative; background-color:#fff; }
+#popup .ec-base-layer.agreementArea .agree { overflow:auto; display:block; width:100%; height:429px; margin:0 auto; padding:5px; line-height:1.5; border:1px solid #d9d9d9; }
+#popup .ec-base-layer .header { position:relative; background-color:#fff; text-align: center; padding:0; }
+#popup .ec-base-layer .header h1 { font-size:20px; font-weight: 500; color:#000; padding:15px 0; }
+#popup .ec-base-layer .wrap,
+#popup .ec-base-layer .content { padding:16px 16px 30px; font-size:13px; border-top:1px solid #E1E1E1; }
+#popup .ec-base-layer .ec-base-button { padding:0 16px;  border:0; background-color: #fff; text-align: center; }
+#popup .ec-base-layer .ec-base-button .btnEm { font-family:'NotoSansKR',sans-serif; width:100%; padding:0; height:45px; line-height: 45px; background-color: #fff; color:#383838; font-size:14px; font-weight: 700; border: 1px solid #A7A7A7; }
+#popup .ec-base-layer .close,
+#popup .ec-base-layer button.btnClose,
+#popup .ec-base-layer .btnClose > a {  position: absolute; top: 37px; right: 20px; margin: -14px 0 0; display: block; width: 16px; height: 16px; text-indent: 150%; font-size: 0; line-height: 0; white-space: nowrap; background: url(//img.echosting.cafe24.com/skin/mobile/order/btn_close.png) no-repeat center center; background-size: 21px 21px; filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(340deg) brightness(0%) contrast(106%); }
+#popup .ec-base-layer .close {  top:33px; right:8px; width:0; height: 0px; background-size: 17px 17px;  }
+#popup .ec-base-layer .close img { display:none; }
+#popup .ec-base-layer h1 { display:inline-block; max-width:79%; font-size:20px; font-weight: 500; color:#000; position:relative; background-color:#fff; padding:15px 0; text-align: left; width:initial; height:initial; line-height:1.5; }
+#popup textarea { font-family:'NotoSansKR',"맑은 고딕",Malgun Gothic,AppleSDGothicNeo,"돋움",Dotum,sans-serif; }
+/* PC */
+@media all and (min-width:1024px) {
+  #popup .ec-base-layer .wrap,
+  #popup .ec-base-layer .content { padding:16px 24px 30px; }
+  #popup { width:900px; margin:0 auto; background:#fff; border:1px solid #E1E1E1; border-top:0; border-bottom:0; }
+  #popup .ec-base-layer .ec-base-button { padding:0 24px; }
+  #popup .ec-base-layer .ec-base-button .btnEm { width:initial; padding: 0 65px; }
+  #popup .ec-base-layer .btnClose { right: 28px; }
+}

@@ -1,0 +1,7 @@
+#popup { width:600px; }
+.xans-calendar-modify .ec-base-table table { table-layout:fixed; }
+.xans-calendar-modify td input,
+.xans-calendar-modify td textarea { padding:2px 2px 2px 4px; width:100%; max-width:350px; height:18px; border:1px solid #ddd; color:#222; }
+.xans-calendar-modify td input#date { width:64px; text-align:center; }
+.xans-calendar-modify td input#confirm { width:40px; }
+.xans-calendar-modify td textarea { height:80px; }

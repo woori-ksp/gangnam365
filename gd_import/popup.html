@@ -1,0 +1,59 @@
+<!--@js(/gd_import/js/popup.js)-->
+<div class="popupWrap">
+    <div class="swiper-container main_popup">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="/">
+                    <div class="img_area"><img src="/web/upload/goodymall/kr/popup/popup01.jpg" alt="팝업이미지01" /></div>
+                    <div class="txt">
+                        <h3>카카오채널 추가하고<br/>혜택받기 !</h3>
+                        <p>HOME 카톡채널 추가하고<br/>다양한 쿠폰 받고 쇼핑하자 !</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="/">
+                    <div class="img_area"><img src="/web/upload/goodymall/kr/popup/popup02.jpg" alt="팝업이미지02" /></div>
+                    <div class="txt">
+                        <h3>밀키트 간편식 출시 !<br/>빨간 떡볶이 2종</h3>
+                        <p>인플루언서가 추천하는<br/>오리지널 국물, 기름떡볶이 2종</p>
+                    </div>
+                </a>
+            </div>
+        </div> 
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-popup"></div> 
+        <!-- Add Navigation -->
+        <!--div class="swiper-button-prev swiper-button-prev-popup"></div>
+        <div class="swiper-button-next swiper-button-next-popup"></div--> 
+    </div>   
+    <div class="popupBtn">
+        <span class="popup_checkBox"><label for="popup_check">오늘하루 열지않기 <input id="popup_check" type="checkbox" style="vertical-align:-2px" /></label></span>
+        <span class="popup_closeBtn" >닫기 <i class="xi-close"></i></span>
+    </div>
+    <!--i class="xi-close"></i-->
+</div>
+ 
+<!-- Initialize Swiper -->
+<script>
+    var popup_swiper = new Swiper('.main_popup', {
+        speed: 600,
+        //slidesPerView: 'auto',
+        spaceBetween: 0,
+        centeredSlides: true,
+        parallax: true,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination-popup',
+            type: "fraction",
+        },
+        /*navigation: {
+            nextEl: '.swiper-button-next-popup',
+            prevEl: '.swiper-button-prev-popup',
+        },*/
+    });
+</script>

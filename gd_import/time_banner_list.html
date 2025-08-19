@@ -1,0 +1,65 @@
+<!-- 
+타임세일상품
+판매가, 할인판매가 기준
+프로모션 - 혜택등록
+-->
+<div class="time_banner">
+    <div class="box-wrap grid2">
+        <div class="box">
+            <div class="item-wrap">
+                <div class="item-top">
+                    <div class="date-wrap">
+                        <div class="date-title"><span class="txt"></span></div>
+                        <div class="countdown"><span>00</span>일 <span>00</span>시 <span>00</span>분 <span>00</span>초</div>
+                    </div>
+                </div>
+                <div class="item-inner">
+                    <div class="item-left round">
+                        <a href="{$link_product_detail}"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    </div>
+                    <div class="item-right">
+                        <div class="description" ec-data-custom="{$product_custom}">
+                            <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                            <ul module="product_ListItem" class="spec">
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap">
+                            <span>{$basket_icon}</span>
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="item-wrap">
+                <div class="item-top">
+                    <div class="date-wrap">
+                        <div class="date-title"><span class="txt"></span></div>
+                        <div class="countdown"><span>00</span>일 <span>00</span>시 <span>00</span>분 <span>00</span>초</div>
+                    </div>
+                </div>
+                <div class="item-inner">
+                    <div class="item-left round">
+                        <a href="{$link_product_detail}"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                    </div>
+                    <div class="item-right">
+                        <div class="description" ec-data-custom="{$product_custom}">
+                            <strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+                            <ul module="product_ListItem" class="spec">
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                                <li class="{$item_display|display} display{$item_title|striptag}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                            </ul>
+                        </div>                   
+                        <div class="btn-wrap">
+                            <span>{$basket_icon}</span>
+                            <a href="{$link_product_detail}" name="anchorBoxName_{$product_no}">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 

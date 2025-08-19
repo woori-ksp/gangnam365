@@ -1,0 +1,8 @@
+/*.xans-mall-faq .cont { padding:17px 10px 46px 9px; color:#555; line-height:18px; }
+.xans-mall-faq .cont h3 { margin:0 0 20px; color:#333; font-size:16px; }*/
+
+.xans-mall-faq { margin:14px 0 0; padding:0 0 29px; font-size:13px; }
+.xans-mall-faq .ec-base-fold { border-width:1px 0; }
+.xans-mall-faq .ec-base-fold.theme4 dt { font-size:14px; }
+.xans-mall-faq .ec-base-fold.theme4 dd { border-top:1px dashed #ddd; }
+.xans-mall-faq .ec-base-fold.theme4 dd + dt { border-top:1px dashed #eee; }

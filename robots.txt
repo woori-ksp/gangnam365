@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /web/upload/link_inpock/nal_wihan.html
+
+Sitemap: https://gangnam365.com/sitemap.xml

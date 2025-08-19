@@ -1,0 +1,32 @@
+span.ec-base-help,
+p.ec-base-help,
+ul.ec-base-help li { margin:2px 9px; padding:1px 0 1px 20px; line-height:1.4; background:url('//img.echosting.cafe24.com/skin/base/common/ico_info.gif') no-repeat 0 2px; }
+
+div.ec-base-help { margin:20px 0; border:1px solid #ddd; font-size: 13px; line-height:24px; }
+div.ec-base-help > h2,
+div.ec-base-help > h3 { padding:9px 0 6px 10px; border-bottom:1px solid #eee; color:#333; font-size:14px; background:#fcfcfc; }
+div.ec-base-help .inner { padding:0 9px 12px; }
+div.ec-base-help h4 { margin:22px 0 -4px; color:#444; font-size:14px; font-weight:normal; }
+div.ec-base-help h4:first-child { margin-top:13px; }
+div.ec-base-help p { margin:15px 0 0 10px; color:#707070; }
+div.ec-base-help ul,
+div.ec-base-help ol { margin:15px 0 0 11px; }
+div.ec-base-help li { color:#707070; }
+
+/* number */
+div.ec-base-help ol li { padding:0 0 0 25px; background:url('//img.echosting.cafe24.com/skin/base/common/ico_number.png') no-repeat; }
+div.ec-base-help ol .item1 { background-position:-484px 5px; }
+div.ec-base-help ol .item2 { background-position:-434px -95px; }
+div.ec-base-help ol .item3 { background-position:-384px -195px; }
+div.ec-base-help ol .item4 { background-position:-334px -295px; }
+div.ec-base-help ol .item5 { background-position:-284px -395px; }
+div.ec-base-help ol .item6 { background-position:-234px -495px; }
+div.ec-base-help ol .item7 { background-position:-184px -595px; }
+div.ec-base-help ol .item8 { background-position:-134px -695px; }
+div.ec-base-help ol .item9 { background-position:-84px -795px; }
+div.ec-base-help ol .item10 { background-position:-34px -895px; }
+
+/* typeDash */
+div.ec-base-help ul li { padding:0 0 0 11px; background:url('//img.echosting.cafe24.com/skin/base/common/ico_dash.gif') no-repeat 0 7px; }
+.ec-base-help.typeDash li { padding:0 0 0 11px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_dash.gif") no-repeat 0 7px; }
+.ec-base-tooltip .ec-base-help.typeDash li { margin:2px 0; }

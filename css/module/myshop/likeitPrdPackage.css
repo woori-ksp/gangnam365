@@ -1,0 +1,5 @@
+.xans-myshop-likecategorylist .ec-base-table,
+.xans-myshop-likeproductlist .ec-base-table { font-size: 14px; }
+.xans-myshop-likeproductlist .typeList table td.thumb img { border-radius: 10px; }
+
+.xans-myshop-likeproductlist .list table td.thumb img { width:75px; height:auto; }

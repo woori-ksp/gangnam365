@@ -1,0 +1,23 @@
+.xans-calendar-headweek { position:relative; text-align:center; }
+.xans-calendar-headweek .date { display:inline; color:#333; font-size:24px; letter-spacing:-1px; }
+.xans-calendar-headweek .date img { vertical-align:middle; }
+.xans-calendar-headweek .button { position:absolute; right:0; top:0px; }
+
+.xans-calendar-weekpackage .calendar { margin:20px 0 0; }
+.xans-calendar-listweekhead th { padding:8px 0; color:#555; border-top:1px solid #ddd; }
+.xans-calendar-listweekhead th.sun { color:#e5541e; }
+.xans-calendar-listweekhead th.sat { color:#7cbed7; }
+
+.xans-calendar-listweek th,
+.xans-calendar-listweek td { padding:5px; border:1px solid #eee; background:#fcfcfc; color:#555; font-weight:normal; vertical-align:middle;  line-height:1.6; }
+.xans-calendar-listweek .week_today, .xans-calendar-listweek .exist_data { background:#d1e7b9; }
+.xans-calendar-listweek td li a { color:#555; line-height:1.6; }
+
+@media all and (max-width:767px){
+	.xans-calendar-weekpackage .ec-base-tab .menu li { width: calc(33.333% - 10px); }
+}
+
+@media all and (max-width:559px){
+    .xans-calendar-headweek::after { content:""; display:block; clear:both; }
+    .xans-calendar-headweek .button { position:relative; margin:10px 0 0; float:right; }
+}

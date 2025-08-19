@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <title>정기결제 서비스 이용 동의</title>
+    <!--@css(/css/module/order/ec_orderform/form_onetouch_popup.css)-->
+    <!--@js(/js/common.js)-->
+    <!--@js(/js/popup_scroll.js)-->
+    <!--@js(/layout/basic/js/popup.js)-->
+</head>
+<body id="popup" class="v2">
+    <div module="Order_form" class="ec-base-layer agreementArea">
+        <div class="header">
+            <h1>정기결제 서비스 이용 동의</h1>
+        </div>
+        <div class="wrap">
+            <div class="agree ec-base-card gBorder">{$form.subscription_info_content_html}</div>
+        </div>
+        <div class="footer ec-base-button">
+            <button type="button" class="btnSubmit" onclick="{$action_insurance_agree}">확인</button>
+        </div>
+        <button type="button" class="btnClose" onclick="window.close()">닫기</button>
+    </div>
+</body>
+</html>

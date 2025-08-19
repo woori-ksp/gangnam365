@@ -1,0 +1,32 @@
+#myshopMain { margin:40px 0 0; }
+#myshopMain ul { }
+#myshopMain ul:after { content:""; display:block; clear:both; }
+#myshopMain .shopMain { float:left; width:33.33%;  padding:0px 6px; margin:6px 0; box-sizing:border-box; text-align:center; }
+#myshopMain .shopMain .box { border:1px solid #eee; padding:25px 8px; box-sizing:border-box; height:100%;  min-height:260px; }
+#myshopMain .shopMain .box:hover { border: 1px solid #000; }
+#myshopMain .shopMain h3 { position:relative;  font-size:12px; color:#333; font-weight:normal; }
+#myshopMain .shopMain h3:before { display:block; content:""; width:65px; height:50px; margin:0 auto; padding:0 0 10px; background:url("//img.echosting.cafe24.com/skin/base/myshop/sfix_icon_shopMain.png") no-repeat 0 0; }
+#myshopMain .shopMain h3 strong { font-size:18px;}
+#myshopMain .shopMain h3 span { display:block; font-size: 14px; padding:6px 0 25px; }
+#myshopMain .shopMain a { display:block; }
+#myshopMain .shopMain a:hover { text-decoration:none; }
+#myshopMain .shopMain p  { font-size:13px; line-height:18px; color:#777; }
+
+/* 아이콘 */
+#myshopMain .shopMain.order h3:before { background-position:12px 0; }
+#myshopMain .shopMain.profile h3:before { background-position:-90px 8px; }
+#myshopMain .shopMain.wishlist h3:before { background-position:-188px 0; }
+#myshopMain .shopMain.likeIt h3:before { background-position:-288px 4px; }
+#myshopMain .shopMain.mileage h3:before { background-position:8px -100px; }
+#myshopMain .shopMain.deposits h3:before { background-position:-92px -98px; }
+#myshopMain .shopMain.consult h3:before { background-position:-188px -100px; }
+#myshopMain .shopMain.coupon h3:before { background-position:-292px -96px; }
+#myshopMain .shopMain.board h3:before { background-position:12px -200px; }
+#myshopMain .shopMain.address h3:before { background-position:-102px -194px; }
+#myshopMain .shopMain.inquiry h3:before { background-position:-200px -200px; }
+#myshopMain .shopMain.regularDelivery h3:before { background-position:-292px -200px; }
+
+@media all and (max-width:767px){
+    #myshopMain .shopMain { width:50%; }
+}
+

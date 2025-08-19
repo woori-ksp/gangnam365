@@ -1,0 +1,99 @@
+<!--@layout(/layout/basic/main_supply.html)-->
+<div module="Mall_SupplyMainimage">
+    <!--@css(/css/module/mall/supplyMainimage.css)-->
+    {$supply_main_image}
+</div>
+
+<div module="Mall_SupplySearch">
+    <!--@css(/css/module/mall/supplySearch.css)-->
+    <fieldset>
+        <legend class="title">샵 상품 검색</legend>
+        {$form.searchSupply}<input type="image" src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_search.gif" alt="검색" onclick="{$action_search_submit}" class="supply_search" /></fieldset>
+</div>
+    
+<!---------------------------------------------------------------------------------------------------------------------------
+■ best& new ■
+
+※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+---------------------------------------------------------------------------------------------------------------------------->    
+<!--@import(/gd_import/list_best_roll.html)-->
+
+<div module="product_normalpackage">
+    <!--@css(/css/module/product/listnormal.css)-->
+    <div module="product_normalmenu">
+        <!--
+            $compare_page = /product/compare.html
+        -->
+        <div class="title" id="{$listmenu_position}">
+            <h3><span>HIT PRODUCT</span></h3>
+        </div>
+
+        <div class="function">
+            <p class="prdCount">등록 제품 : <strong>{$total_count}</strong>개</p>
+            <ul id="type">
+                <li><a href="{$param_3}" {$style_3}>낮은가격</a></li>
+                <li><a href="{$param_4}" {$style_4}>높은가격</a></li>
+                <li><a href="{$param_1}" {$style_1}>상품명</a></li>
+                <li><a href="{$param_2}" {$style_2}>제조사</a></li>
+                <li><a href="{$param_5}" {$style_5}>신상품</a></li>
+                <li class="{$favor_sort_display|display}"><a href="{$param_6}" {$style_6}>인기상품</a></li>
+                <li><a href="{$param_7}" {$style_7}>사용후기</a></li>
+            </ul>
+            <span class="compare {$product_compare_display|display}"><a href="#none" class="btnCompare" onclick="{$product_compare_action}">상품비교</a></span>
+        </div>
+
+        <fieldset class="condition {$select_search_display|display}">
+            <legend>조건별 검색</legend>
+            <p>
+                <!--@js(/js/module/product/product_selectsearch.js)-->
+                <select class="FirstSelect" module="product_FirstSelect">
+                    <option value="">-조건선택-</option>
+                    <option value="{$value}" {$selected}>{$title}</option>
+                    <option value="{$value}" {$selected}>{$title}</option>
+                </select>
+                <select class="SecondSelect" module="product_SecondSelect">
+                    <option value="">-조건선택-</option>
+                    <option value="{$value}" {$selected}>{$title}</option>
+                    <option value="{$value}" {$selected}>{$title}</option>
+                </select>
+                <a href="#SelectSearch" class="btnSubmit SelectSearch">검색</a>
+            </p>
+        </fieldset>
+    </div>
+
+    <div module="product_listnormal" class="ec-base-product">
+        <!--
+            $count = 12
+                ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <ul class="prdList grid2">
+            <!--@import(/gd_import/prdListCf.html)-->
+        </ul>
+    </div>
+</div>
+
+<div module="product_normalpaging" class="ec-base-paginate">
+    <a href="{$param_first}" class="first"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_first.gif" alt="첫 페이지" /></a>
+    <a href="{$param_before}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev.gif" alt="이전 페이지" /></a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next.gif" alt="다음 페이지" /></a>
+    <a href="{$param_last}" class="last"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_last.gif" alt="마지막 페이지" /></a>
+</div>
+
+<!-- 공급사:판매사정보 -->
+<div module="Mall_SupplyInfo" class="supplyInfo {$supply_info_display|display}">
+    {$supply_info}
+</div>
+<!-- //공급사:판매사정보 -->
+
+<!--@define(cmc_log)-->

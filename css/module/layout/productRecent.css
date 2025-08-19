@@ -1,0 +1,9 @@
+.fixed_btn .xans-layout-productrecent { width: 80px; border:1px solid #ddd; text-align:center; background:rgba(255,255,255,0.5); margin: 0 auto 8px; border-radius: 4px; }
+.fixed_btn .xans-layout-productrecent h2 a { display:block; padding:8px 0; font-size:12px; line-height:16px; font-weight:normal; color:#000; }
+.fixed_btn .xans-layout-productrecent ul { width:64px; margin:0 auto; }
+.fixed_btn .xans-layout-productrecent li a { color:#000; }
+.fixed_btn .xans-layout-productrecent li img { width:100%; border-radius: 4px; image-rendering: -webkit-optimize-contrast; }
+.fixed_btn .xans-layout-productrecent li span { display:block; padding:2px 0; line-height:16px; }
+.fixed_btn .xans-layout-productrecent .player { overflow:hidden; padding: 4px 0 8px; *zoom:1; }
+.fixed_btn .xans-layout-productrecent .player i { border-radius: 100%; font-size: 16px; color: #000; padding: 4px; /*background: rgba(0,0,0,0.1);*/ margin: 0 2px; }
+.fixed_btn .xans-layout-productrecent .player i:hover { opacity: 0.5; }

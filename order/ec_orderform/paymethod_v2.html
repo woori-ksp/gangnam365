@@ -1,0 +1,450 @@
+<!--
+        이 파일은 원터치 주문서의 읽기 전용 파일입니다.
+        이 파일은 기능 업그레이드 시, 자동으로 개선된 소스가 적용되어 별도로 디자인 수정을 하지 않아도 됩니다 .
+        원터치 주문서 조각 html 파일을 수정할 경우, 작성한 정보가 유실되거나 주문서 최신 기능이 자동 업그레이드되지 않을 수 있으니 유의해 주세요.
+-->
+<div id="ec-jigsaw-area-paymethod" class="ec-base-fold eToggle selected">
+    <div id="ec-jigsaw-title-paymethod" class="title">
+        <h2>결제수단</h2>
+    </div>
+    <div class="contents">
+        <!-- app tag -->
+        <div id="ec-orderform-paymethod-head"></div>
+
+        <!-- ECHOSTING-540343 결제 수단 추가: -->
+        <div class="column">
+            <div>
+                {$form.addr_paymethod_v2}
+                <div class="ec-paymethod-widgetArea {$widget_paymethod_display|display} {$widget_paymethod_selected}">
+                    <input type="radio" name="paymethod" id="paymethod-widget" class="" {$widget_paymethod_checked} /><label for="paymethod-widget">{$widget_display_name}</label>
+                    <input id="addr_paymethod_widget" class="displaynone"  name="addr_paymethod" fw-filter="isFill" fw-label="결제방식" fw-msg value="{$widget_pg_name}" type="radio" />
+                    <div id="ec-payment-widget" class="inner"></div>
+                </div>
+                <!-- // -->
+                <div id="wrappingOriginal" class="hidden">
+                    <!-- 카드사 직접결제 -->
+                    <div id="{$payment_input_direct_card}" class="ec-base-table typeWrite cardWrap {$directpay_card_display|display}">
+                        {$directpay_card_form}
+                    </div>
+                    <!-- 무통장 입금 -->
+                    <div id="{$payment_input_cash}" class="ec-base-table typeWrite cashWrap">
+                        <table border="1">
+                            <caption>무통장입금 정보 입력</caption>
+                            <colgroup>
+                                <col style="width:100px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">입금은행 <span class="icoRequired">필수</span></th>
+                                <td>{$form.bankaccount}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">입금자명 <span class="icoRequired">필수</span></th>
+                                <td>{$form.pname}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 현금영수증 -->
+                    <div class="receiptWrap">
+                        <div id="{$cashreceipt_display_area}" class="receiptArea {$cashreceipt_display|display}">
+                            <div class="title">
+                                <h3>현금영수증</h3>
+                            </div>
+                            {$form.cashreceipt_regist}
+                            <div class="ec-cashreceipt-textAndForm">
+                                <div class="ec-cashreceipt-textArea ec-base-box gBlank10">
+                                    <div class="taxView">
+                                        <span class="number"><span id="ec-cashreceipt-userTypeText"></span> <span id="ec-cashreceipt-numberText"></span></span>
+                                    </div>
+                                    <span class="sideRight"><a href="#none" id="ec-show-cashreceipt-form" class="btnNormal mini">정보변경</a></span>
+                                </div>
+
+                                <div class="ec-cashreceipt-formArea">
+                                    <div id="{$cashreceipt_form_area}" class="gBlank10">
+                                        {$form.cashreceipt_user_type2}
+
+                                        <!-- 현금영수증 > 개인 선택 시 -->
+                                        <div class="inputArea" id="{$cashreceipt_mobile_display_area}">
+                                            <div class="ec-base-table typeWrite">
+                                                <table border="1">
+                                                    <caption>전화번호 입력</caption>
+                                                    <colgroup>
+                                                        <col style="width:100px" />
+                                                        <col style="width:auto" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">전화번호 <span class="icoRequired">필수</span></th>
+                                                        <td><div class="ec-base-mail">{$form.cashreceipt_user_mobile}</div></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- 현금영수증 > 사업자 선택 시 -->
+                                        <div class="inputArea" id="{$cashreceipt_regno_display_area}">
+                                            <div class="ec-base-table typeWrite">
+                                                <table border="1">
+                                                    <caption>사업자 번호 입력</caption>
+                                                    <colgroup>
+                                                        <col style="width:100px" />
+                                                        <col style="width:auto" />
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">사업자 번호 <span class="icoRequired">필수</span></th>
+                                                        <td><div class="ec-base-mail">{$form.cashreceipt_reg_no}</div></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 세금계산서 -->
+                        {$form.__orderTax_baseAddr}
+                        {$form.__orderTax_detailAddr}
+                        {$form.__orderTax_zipcode}
+                        <div id="{$tax_request_display_area}" class="receiptArea {$tax_request_display|display}">
+                            <div class="title">
+                                <h3>세금계산서</h3>
+                            </div>
+                            {$form.tax_request_regist}
+                            <div class="ec-taxRequest-textAndForm">
+                                <div class="ec-taxRequest-textArea ec-base-box gBlank10">
+                                    <div class="taxView">
+                                        <span id="ec-taxRequest-regnoText"></span><br />
+                                        <span id="ec-taxRequest-companyNameText"></span> <span id="ec-taxRequest-presidentNameText"></span><br />
+                                        <span id="ec-taxRequest-address1Text"></span><br />
+                                        <span id="ec-taxRequest-address2Text"></span><br />
+                                        <span id="ec-taxRequest-emailText"></span>
+                                    </div>
+                                    <span class="sideRight"><a href="#none" id="ec-show-taxRequest-form" class="btnNormal mini">정보변경</a></span>
+                                </div>
+
+                                <div class="ec-taxRequest-formArea">
+                                    <div id="{$tax_request_form_area}" class="infoForm">
+                                        <ul class="ec-base-help typeDash gBreak10">
+                                            <li>세금 계산서 발행 신청을 위해 아래 모든 입력사항을 빠짐없이 입력하십시오.</li>
+                                            <li>신청양식 작성 후 사업자 등록증 사본을 팩스({$cs_fax_number})로 보내주십시오.</li>
+                                        </ul>
+
+                                        <h4 class="blind">사업자 정보</h4>
+                                        <div class="ec-base-table typeWrite gCellNarrow">
+                                            <table border="1">
+                                                <caption>사업자 정보 입력</caption>
+                                                <colgroup>
+                                                    <col style="width:92px" />
+                                                    <col style="width:auto" />
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">사업자구분 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_company_type}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">사업자<br />등록번호 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_company_regno}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">상호명<br />(법인명) <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_company_name}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">대표자명 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_president_name}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주소 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.orderTax_address}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">업태 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_company_condition}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">종목 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_company_line}</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <h4 class="blind">신청자 정보</h4>
+                                        <div class="ec-base-table typeWrite gCellNarrow">
+                                            <table border="1">
+                                                <caption>신청자 정보 입력</caption>
+                                                <colgroup>
+                                                    <col style="width:92px" />
+                                                    <col style="width:auto" />
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">신청자명 <span class="icoRequired">필수</span></th>
+                                                    <td>{$form.tax_request_name}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">전화번호 <span class="icoRequired">필수</span></th>
+                                                    <td><div class="phoneFlex">{$form.tax_request_phone}</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">이메일 <span class="icoRequired">필수</span></th>
+                                                    <td>
+                                                        <div class="ec-base-mail">{$form.tax_request_email}</div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //세금계산서 -->
+                    </div>
+                    <!-- //현금영수증 -->
+                    <div id="{$payment_input_icash}" class="ec-base-table typeWrite icashWrap">
+                        <table border="1">
+                            <caption>에스크로(가상계좌)</caption>
+                            <colgroup>
+                                <col style="width:100px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">에스크로</th>
+                                <td>{$form.flagEscrowIcashUse}<label for="flagEscrowIcashUse0">에스크로(구매안전)서비스를 적용합니다.</label></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="{$payment_input_tcash}" class="ec-base-table typeWrite tcashWrap">
+                        <table border="1">
+                            <caption>실시간 계좌이체 정보 입력</caption>
+                            <colgroup>
+                                <col style="width:100px" />
+                                <col style="width:auto" />
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">예금주명 <span class="icoRequired">필수</span></th>
+                                <td>{$form.allat_account_nm}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ec-paymethod-input-detail">
+
+            <!-- 결제수단 도움말 -->
+            <div class="helpArea">
+                <!-- 무통장입금, 카드결제, 휴대폰결제, 실시간계좌이체, 페이팔, 엑심베이, 엑시즈, 알리페이 -->
+                <ul id="{$pg_paymethod_info}" class="ec-base-help typeDash">
+                    <li id="{$pg_paymethod_info_shipfee}">최소 결제 가능 금액은 총 결제금액에서 배송비를 제외한 금액입니다.</li>
+                    <li id="{$pg_paymethod_info_pg}">소액 결제의 경우 PG사 정책에 따라 결제 금액 제한이 있을 수 있습니다.</li>
+                </ul>
+
+                <!-- 케이페이 도움말 -->
+                <ul id="{$kpay_info}" class="ec-base-help typeDash">
+                    <li>케이페이 앱을 설치한 후, 최초 1회 카드정보를 등록하셔야 사용 가능합니다.</li>
+                </ul>
+
+                <!-- 페이나우 도움말 -->
+                <ul id="{$paynow_info}" class="ec-base-help typeDash">
+                    <li>페이나우 앱을 설치한 후, 최초 1회 카드 및 계좌 정보를 등록하셔야 사용 가능합니다.</li>
+                </ul>
+
+                <!-- 페이코 도움말 -->
+                <ul id="{$payco_info}" class="ec-base-help typeDash">
+                    <li>페이코(<a href="//www.payco.com" target="_blank">www.payco.com</a>)에 회원가입 후, 최초 1회 카드 및 계좌 정보를 등록하셔야 사용 가능합니다.</li>
+                </ul>
+
+                <!-- 카카오페이 도움말 -->
+                <ul id="{$kakaopay_info}" class="ec-base-help typeDash">
+                    <li>카카오톡 앱을 설치한 후, 최초 1회 카드정보를 등록하셔야 사용 가능합니다.</li>
+                    <li>인터넷 익스플로러는 8 이상에서만 결제 가능합니다.</li>
+                    <li>카카오머니로 결제 시, 현금영수증 발급은 ㈜카카오페이에서 발급가능합니다.</li>
+                </ul>
+
+                <!-- 스마일페이 도움말 -->
+                <ul id="{$smilepay_info}" class="ec-base-help typeDash">
+                    <li>앱 설치없이 회원가입 또는 G마켓/옥션/G9 ID 로그인 후 바로 이용 가능합니다.</li>
+                    <li>최초 1회 카드 정보를 등록하셔야 사용 가능합니다.</li>
+                    <li>결제시 스마일캐시 0.5% 자동적립되며(최대5천원), 스마일캐시는 스마일페이 전 가맹점에서 적립과 사용이 가능합니다.</li>
+                </ul>
+
+                <!-- 네이버페이 도움말 -->
+                <ul id="{$naverpay_info}" class="ec-base-help typeDash">
+                    <li>주문 변경 시 카드사 혜택 및 할부 적용 여부는 해당 카드사 정책에 따라 변경될 수 있습니다.</li>
+                    <li>네이버페이는 네이버ID로 별도 앱 설치 없이 신용카드 또는 은행 계좌 정보를 등록하여 네이버페이 비밀번호로 결제할 수 있는 간편결제 서비스입니다.</li>
+                    <li>네이버페이 카드 간편결제는 네이버페이에서 제공하는 카드사별 무이자, 청구 할인 혜택을 받을 수 있습니다.</li>
+                </ul>
+
+                <!-- 토스 도움말 -->
+                <ul id="{$toss_info}" class="ec-base-help typeDash">
+                    <li>토스는 간편하게 지문 또는 비밀번호만으로 결제할 수 있는 빠르고 편리한 간편 결제 서비스입니다.</li>
+                    <li>토스 결제 후 취소/반품 등이 발생할 경우 토스를 통한 신용카드 취소/토스머니 환불이 이루어집니다. </li>
+                    <li>토스 이용가능 결제수단 : 국내 발행 신용/체크카드, 토스머니</li>
+                </ul>
+
+                <!-- 카페24페이 도움말 -->
+                <ul id="{$cafe24pay_info}" class="ec-base-help typeDash">
+                    <li>카페24페이는 카페24에 회원가입 또는 로그인 후 별도 앱 설치 없이 결제 가능합니다.</li>
+                    <li>최초 1회 카드 정보를 등록하여야 사용 가능합니다.</li>
+                </ul>
+
+                <!-- 후불 결제 도움말 -->
+                <div id="{$pg_paymethod_info_defer}" class="{$payment_input_defer_display|display}">
+                    <!-- NP Postpay/GMO Payment After Delivery -->
+                    <ul id="{$pg_paymethod_info_defer_type_a}" class="ec-base-help typeDash">
+                        <li>상품 수령과 동시에 배송 직원에게 결제 수수료를 지불하는 후불 결제수단입니다.</li>
+                        <li>최종 결제금액은 후불 결제 수수료가 포함된 금액으로 계산됩니다.</li>
+                        <li>희망배송업체/방식을 선택하시면 배송업체별 후불 결제 수수료가 적용됩니다.</li>
+                        <li>결제 수수료 정보를 확인 후 결제하시기 바랍니다.<a href="#ec-orderform-defer-layer" class="txtWord ec-order-deffered-payment-popup ec-jigsaw-showLayer">확인하기</a></li>
+                    </ul>
+                    <!-- Daibiki (COD) -->
+                    <ul id="{$pg_paymethod_info_defer_type_b}" class="ec-base-help typeDash">
+                        <li>상품 수령과 동시에 배송 직원에게 결제 수수료를 지불하는 후불 결제수단입니다.</li>
+                        <li>최종 결제금액은 후불 결제 수수료가 포함된 금액으로 계산됩니다.</li>
+                        <li>희망배송업체/방식을 선택하시면 배송업체별 후불 결제 수수료가 적용됩니다.</li>
+                        <li>결제 수수료 정보를 확인 후 결제하시기 바랍니다. <a href="#ec-orderform-defer-layer" class="txtWord ec-order-deffered-payment-popup ec-jigsaw-showLayer">확인하기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 결제수단 저장 -->
+        <div class="saveArea segment unique {$payment_save_paymethod_display|display}">
+            {$payment_save_paymethod_checkbox}<label for="{$payment_save_paymethod_id}">{$payment_save_paymethod_text}</label>
+        </div>
+
+        <!-- app tag -->
+        <div id="ec-orderform-paymethod-tail"></div>
+    </div>
+</div>
+
+<!-- 공인인증서 발급안내 -->
+<div id="layerPublicCertificate" class="mLayer agree gMedium typeNormal displaynone">
+    <div class="layerWrap">
+        <h2>공인인증서 발급안내</h2>
+        <div class="layerContent">
+            <div class="agree">
+                <div class="grayBox">금감원의 전자상거래 안정성 강화정책에 따라 30만원 이상의 <strong>모든 신용카드 결제에 공인인증 사용이 의무화</strong>됩니다. (단, 30만원 이하 결제시에는 공인인증서 없어도 결제가능)</div>
+
+                <h3>공인인증 발급</h3>
+                <ul class="descList">
+                    <li>- 신용카드 결제시 공인인증서는 범용공인인증서 (유료발급) 또는 신용카드용 공인인증서만 사용 가능합니다.</li>
+                </ul>
+                <ol class="step">
+                    <li><div class="item"><span class="label">STEP 1</span><strong class="item-title">거래은행 방문</strong></div></li>
+                    <li><div class="item"><span class="label">STEP 2</span><strong class="item-title">인터넷 뱅킹 신청</strong></div></li>
+                    <li><div class="item"><span class="label">STEP 3</span><strong class="item-title">거래은행 홈페이지 접속</strong></div></li>
+                    <li><div class="item"><span class="label">STEP 4</span><strong class="item-title">공인인증서 다운로드 및 설치</strong></div></li>
+                </ol>
+            </div>
+        </div>
+        <div class="layerFooter">
+            <button type="button" class="btnClose eClose">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- 안전결제(ISP) 안내 -->
+<div id="layerISP" class="mLayer agree gMedium typeNormal displaynone">
+
+    <div class="layerWrap">
+        <h2>안전결제(ISP) 안내</h2>
+        <div class="layerContent">
+            <div class="agree">
+                <div class="grayBox">쇼핑몰 이용시 고객님의 카드번호/비밀번호 등을 입력함으로써 발생될 수 있는 개인정보 유출 및 카드도용 등의 문제점을 차단해주는 지불수단으로, 인터넷 안전결제 (ISP) 비밀번호 만으로 안전한 전자상거래를 할 수 있는 서비스입니다.</div>
+
+                <h3>인터넷 안전결제 (ISP), 이런 점이 좋습니다!</h3>
+                <ul class="descList">
+                    <li>- 신용카드번호, 비밀번호 등 개인정보 유출 및 카드 도용 방지</li>
+                    <li>- 인터넷 안전결제 (ISP) 인증번호만으로 간단하고 편리한 신용결제</li>
+                    <li>- 인터넷 안전결제 (ISP) 및 공인인증 확인으로 2중 보호가 되는 안전한 거래</li>
+                </ul>
+
+                <h3>인터넷 안전결제(ISP), 이렇게 하세요!</h3>
+                <ul class="descList">
+                    <li>- BC카드/국민카드/우리카드 고객님을 위한 인터넷 안전결제 (ISP)</li>
+                </ul>
+                <ol class="step">
+                    <li><div class="item"><span class="label">STEP 1</span><strong class="item-title">결제수단 선택</strong><p>*BC카드/국민카드/우리카드 안전결제 (ISP) 선택시</p></li>
+                    <li>
+                        <div class="item">
+                            <span class="label">STEP 2</span><strong class="item-title">인터넷 뱅킹 신청</strong>
+                            <ul>
+                                <li>- 비밀번호 신청/변경</li>
+                                <li>- 비밀번호 입력/결제</li>
+                            </ul>
+                            <p>*30만원 이상 결제시 공인인증 (공인인증 비밀번호 입력)</p>
+                        </div>
+                    </li>
+                    <li><div class="item"><span class="label">STEP 3</span><strong class="item-title">확인하기</strong></div></li>
+                    <li><div class="item"><span class="label">STEP 4</span><strong class="item-title">주문완료</strong></div></li>
+                </ol>
+            </div>
+        </div>
+        <div class="layerFooter">
+            <button type="button" class="btnClose eClose">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- 안심클릭안내 -->
+<div id="layerSafeClick" class="mLayer agree gMedium typeNormal displaynone">
+    <div class="layerWrap">
+        <h2>안심클릭안내</h2>
+        <div class="layerContent">
+            <div class="agree">
+                <div class="grayBox">인터넷 쇼핑시 고객님이 소유하신 카드에 미리 설정해둔 전자상거래용의 별도 비밀번호를 입력하여 카드 소유자 본인을 확인함으로써 <strong>온라인 상에서의 카드 무단도용을 방지해주는 서비스</strong>입니다.</div>
+
+                <h3>대상카드</h3>
+                <ul class="descList">
+                    <li>- KB국민/BC카드 등 ISP(안전결제) 제외한 모든 신용카드</li>
+                    <li>- 신한, 삼성, 현대, 하나, 롯데카드 등</li>
+                </ul>
+
+                <h3>인증방식</h3>
+                <ul class="descList">
+                    <li>- 카드사가 제공하는 팝업창에서 선택가능</li>
+                    <li>- 안심클릭, 공인인증 중 1개 선택 (30만원 미만시 안심클릭만으로 결제 가능)</li>
+                </ul>
+
+                <h3>등록방법</h3>
+                <ul class="descList">
+                    <li>- 주문/결제 페이지에서 카드사에서 제공하는 팝업 화면을 통해 바로 등록 및 사용 가능</li>
+                    <li>- 고객님이 소유한 신용카드의 카드사 홈페이지를 통해 등록 가능</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layerFooter">
+            <button type="button" class="btnClose eClose">닫기</button>
+        </div>
+    </div>
+</div>
+
+<div id="layer" class="v2 regularDelivery" style="display: none;">
+    <div class="dimmed"  style="display: none;"></div>
+    <!--@css(/css/module/order/ec_orderform/form_onetouch_layer.css)-->
+    <div class="ec-base-layer large">
+        <div class="header">
+            <h1>정기배송 변경 동의</h1>
+        </div>
+        <div class="wrap gap0"  id="modalMessage">
+        </div>
+        <div class="ec-base-button">
+            <a href="#none" class="btnSubmit sizeS" id="btnDisagree">미동의</a>
+            <a href="#none" class="btnSubmit sizeS"  id="btnAgree">동의</a>
+        </div>
+        <a href="#none" class="btnClose" id="btnClose">닫기</a>
+    </div>
+</div>

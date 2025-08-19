@@ -1,0 +1,21 @@
+.xans-myshop-orderstate { margin:20px 0 0; }
+.xans-myshop-orderstate .title { text-align: center; padding:11px 21px; margin:40px 0 10px; }
+.xans-myshop-orderstate .title h3 { padding:0; font-size:22px; font-weight: 500; color:#222; }
+.xans-myshop-orderstate .desc { padding:0 0 0 4px; font-weight:normal; font-size:13px; color:#777; }
+.xans-myshop-orderstate .desc em { color:#000; font-style:normal; }
+.xans-myshop-orderstate .state { overflow:hidden; padding:19px 0; border: 1px solid #ddd; border-width: 1px 0; }
+.xans-myshop-orderstate .order {  width:100%; }
+.xans-myshop-orderstate .order::after { content:""; display:block; clear:both; }
+.xans-myshop-orderstate .order li { float:left; width:25%; padding:0 0 4px; margin:0 -1px 0 0; border-right:1px dotted #eee; text-align:center; }
+.xans-myshop-orderstate .order li strong { display:block; margin:2px 0 7px; font-size:16px; font-weight: 400 !important; color:#555; }
+.xans-myshop-orderstate .order .count { font-weight:bold; font-size:24px; color:#000; }
+.xans-myshop-orderstate .cs {width:100%; text-align:center; }
+.xans-myshop-orderstate .cs li {float:left; width:33.333%; margin: 20px 0 0; padding:0 16px; box-sizing:border-box; letter-spacing:0.04em; word-spacing:4px; }
+.xans-myshop-orderstate .cs strong { font-weight:400 !important; font-size:14px; color:#555; }
+.xans-myshop-orderstate .cs .count { padding:0 0 0 4px; font-weight:bold; color:#000; }
+.xans-myshop-orderstate .cs .icoDot { display:inline-block; width:2px; height:2px; margin:6px 0 0 0; background:#4d4d4d; vertical-align:top; }
+
+
+@media all and (max-width:767px){
+	.xans-myshop-orderstate .title h3 { font-size: 18px; }
+}

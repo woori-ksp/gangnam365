@@ -1,0 +1,33 @@
+.prd_rel { display:none; }
+.prd_rel h3 { font-size:16px; padding:0 16px; }
+.xans-product-relation { padding:27px 0 46px 0; }
+.xans-product-relation h3 { padding: 0 10px 0 8px; font-size: 20px; font-weight: 500; color:#222; }
+.xans-product-relation.ec-base-tab.gFlex .menu li.selected { border: 1px solid #eee; background: #f8f8f8;}
+.xans-product-relation.ec-base-tab.gFlex .menu li.selected a { left: 0; margin: 0; background: transparent; }
+.xans-product-relation.ec-base-tab.gFlex .menu li.selected::after { content: ""; width: 4px; height: 4px; background: #f0352e; border-radius: 100%; position: absolute; left: 50%; top: 8px;}
+
+.xans-product-relation.ec-base-tab .menu { margin:30px 0 11px; }
+.xans-product-relation .relation { padding:0; color:#8f8f91; line-height:1.8em; }
+.xans-product-relation .relation .swiper-container { overflow:visible; padding:0 0 24px; }
+.xans-product-relation .relation h3 { padding:0 10px 0 9px; color:#555; font-size:16px; }
+.xans-product-relation .relation ul.prdList { width:100%; font-size:0; line-height:0; }
+.xans-product-relation .relation ul.prdList img { vertical-align:middle; }
+.xans-product-relation .relation ul.prdList li.item { width:26%; display:inline-block; margin:16px 0 0; color:#555; vertical-align:top; *display:inline; *zoom:1; }
+.xans-product-relation .relation ul.prdList li.item:first-child { margin-left:8px; }
+.xans-product-relation .relation ul.prdList li.item:last-child { margin-right:8px; }
+.xans-product-relation .relation ul.prdList li.item .box { margin:0 auto; font-size:12px; line-height:18px; /*margin: 8px;*/ }
+.xans-product-relation .relation ul.prdList li.item .box strong { display:block; margin:3px 0 0; color:#000; }
+.xans-product-relation .relation ul.prdList li.item .box .salePrice strong { color:#000; }
+.xans-product-relation .relation ul.prdList li.item .box .strike { font-weight:normal; text-decoration:line-through; }
+.xans-product-relation .relation ul.prdList li.item .box .txt { margin: 16px 0 0; font-size: 13px;}
+.xans-product-relation .relation ul.prdList li.item .thumb { width:100%; }
+
+/* 관련상품 - 롤링 스와이퍼 버튼 */
+.prdDetail .swiper-button-prev, .prdRoll .swiper-container-rtl .swiper-button-next { left: -48px; }
+.prdDetail .swiper-button-next, .prdRoll .swiper-container-rtl .swiper-button-prev { right: -48px; }
+
+@media all and (max-width:767px){
+    
+    .xans-product-relation h3 { font-size: 18px; }
+    
+}

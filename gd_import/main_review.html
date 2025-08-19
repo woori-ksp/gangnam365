@@ -1,0 +1,83 @@
+<div class="mainReview mg_60" module="board_listpackage_4"> 
+    <div class="inner">
+        <!----------------------------------------------------------------------------------------------------------
+
+            	module="board_list< 는 해당 게시판의 일반게시글을 끌어오는 소스입니다.	
+            	module="board_notice < 로 변경하시면 해당 게시판에서 공지사항으로 체크된 게시글이 노출됩니다.
+            	※ notice로 변경하실 경우, 공지사항으로 체크된 게시글이 없다면 메인에 노출되지 않습니다.
+
+		-----------------------------------------------------------------------------------------------------------> 
+        <div module="board_list_4" class="reviewList">
+            <div module="board_title_4" class="main_title">
+                <h2>
+                    <span>{$board_name}</span>
+                    <span class="sub">{$board_info}</span>                
+                </h2>
+                <a href="/board/product/list.html?board_no=4" class="more_btn">전체보기</a> 
+            </div>
+            <div class="swiper-container reviewSlide">
+                <!--
+                    $count = 12
+                    $login_page_url = /member/login.html
+                    $deny_access_url = /index.html
+                -->	
+                <ul class="swiper-wrapper"> 
+                    <li class="swiper-slide img_zoom">                        
+                        <a href="{$link_board_detail}">
+                            <div class="imgLink round">{$image_medium}</div>
+                            <div class="txt">  
+                                <div class="txt_area">
+                                    <span class="{$point_display|display} point_rate"><img src="/web/upload/goodymall/kr/layout/star{$point_count}.png" alt="{$point_count}점"></span>
+                                    <!--<span class="date">{$write_date}</span>-->
+                                </div>
+                                <span class="thumb_tit">{$product_name}</span>
+                                <h3 class="subject"><a href="{$link_board_detail}">{$subject}</a></h3>
+                                <p class="cont">{$content|striptag}</p>
+                            </div>
+                        </a>
+                    </li> 
+                    <li class="swiper-slide img_zoom">                        
+                        <a href="{$link_board_detail}">
+                            <div class="imgLink round">{$image_medium}</div>
+                            <div class="txt">  
+                                <div class="txt_area">
+                                    <span class="{$point_display|display} point_rate"><img src="/web/upload/goodymall/kr/layout/star{$point_count}.png" alt="{$point_count}점"></span>
+                                    <!--<span class="date">{$write_date}</span>-->
+                                </div>
+                                <span class="thumb_tit">{$product_name}</span>
+                                <h3 class="subject"><a href="{$link_board_detail}">{$subject}</a></h3>
+                                <p class="cont">{$content|striptag}</p>
+                            </div>
+                        </a>
+                    </li> 
+                </ul>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-review"></div>
+            </div>  
+            <!-- Add Navigation -->
+            <!--div class="swiper-button-prev-review"></div>
+            <div class="swiper-button-next-review"></div-->
+        </div> 
+    </div> <!-- inner 끝 -->
+</div>
+
+<script>        
+    var swiper = new Swiper('.reviewSlide', {
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 16,
+        centeredSlides: false,
+        parallax: true,
+        loop: false,
+        watchOverflow: true,
+        freeMode: true,
+        pagination: {
+            el: '.swiper-pagination-review',
+            clickable:true,
+        },
+        /*navigation: {
+            nextEl: '.swiper-button-next-review',
+            prevEl: '.swiper-button-prev-review',
+        },*/
+    });
+</script> 

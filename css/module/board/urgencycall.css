@@ -1,0 +1,18 @@
+.xans-mall-urgencycall .info { margin:20px 10px; color:#555; font-size: 14px; }
+.xans-mall-urgencycall .required { margin:-35px 0 10px; text-align:right; font-size: 14px; }
+.xans-mall-urgencycall .required img { vertical-align:middle; }
+.xans-mall-urgencycall .ec-base-table table { table-layout: fixed; }
+.xans-mall-urgencycall .ec-base-table input[type=text],
+.xans-mall-urgencycall .ec-base-table textarea { width:500px; }
+.xans-mall-urgencycall .ec-base-table textarea { height:100px; }
+.xans-mall-urgencycall .ec-base-table #captcha { width:160px; }
+
+.xans-mall-urgencycall .ec-base-table tbody th { font-size: 14px; padding: 16px 10px; }
+.xans-mall-urgencycall .ec-base-table.typeWrite td { padding: 16px 10px; }
+.xans-mall-urgencycall .gBlank5 {font-size: 13px;}
+.xans-mall-urgencycall input[type=radio] + label, input[type=checkbox] + label {font-size: 13px;}
+
+@media all and (max-width:767px){
+	.xans-mall-urgencycall .ec-base-table input[type=text]#prd_ord { width:calc(100% - 84px); }
+    .xans-mall-urgencycall .ec-base-table input[type=text], .xans-mall-urgencycall .ec-base-table textarea { width:90%; }
+}    

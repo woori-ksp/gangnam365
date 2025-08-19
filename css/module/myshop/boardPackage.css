@@ -1,0 +1,33 @@
+.xans-myshop-boardpackage { font-size:12px; }
+.xans-myshop-boardlist.ec-base-table { font-size: 14px; }
+.xans-myshop-boardlist .notice .subject { font-weight:bold; word-break:break-all; word-wrap:break-word; }
+
+.board_num { width:8%; }
+.board_cate { width:15%; }
+.board_tit {}
+.board_writer { width:15%; }
+.board_day { width:15%; }
+.board_view { width:8%; }
+
+.ec-base-table.typeList .center td.subject { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+
+
+/* 게시글 */
+.xans-myshop-boardlist { margin:-1px 0 0; font-size:13px; border-top:1px solid #ececec; }
+.xans-myshop-boardlist li { position:relative; padding:16px 8px; color:#757575; border-bottom:1px solid #ececec; }
+.xans-myshop-boardlist a { display:block; color:#555; }
+
+.xans-myshop-boardlist .summary::after { content:""; display:block; clear:both; }
+.xans-myshop-boardlist .summary > .right > span { padding:0 6px 0 0; }
+.xans-myshop-boardlist .subject { width: 60%; float:left; font-size:14px; line-height:1.3em; color:#333; font-weight:normal; }
+.xans-myshop-boardlist .right { width:38%; float:right; text-align:right; }
+.xans-myshop-boardlist .comment { color:#000; }
+.xans-myshop-boardlist .point img { width:auto; height:11px; vertical-align:-1px; }
+
+/* 게시글 없음 */
+.xans-board-empty { padding:28px 0; text-align:center; font-size:12px; border-bottom:1px solid #d5d5d5; background:#fff; }
+
+@media all and (max-width:767px){
+	.xans-myshop-boardlist .subject { width:100%; float:none; padding:0 0 7px; }
+    .xans-myshop-boardlist .right { width:100%; float:none; font-size:12px; }
+}

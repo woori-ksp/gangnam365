@@ -1,0 +1,70 @@
+/* 타임세일 일반진열 grid */
+.time_banner_all .box-wrap[class*="grid"] { width:100%; font-size:0; }
+.time_banner_all .box-wrap[class*="grid"] .box { position: relative; display: inline-block; margin: 0 0 24px; color: #757575; vertical-align: top; padding: 0 8px; box-sizing: border-box; }
+.time_banner_all .box-wrap.grid2 .box { width:50%; max-width:640px; }
+.time_banner_all .box-wrap.grid3 .box { width:33.33%; }
+.time_banner_all .box-wrap.grid4 .box { width:25%; }
+.time_banner_all .box-wrap.grid5 .box { width:20%; }
+
+.time_banner_all .spec li.display할인판매가 > span > span { padding-left: 5px; }
+.ec-base-product .discountPeriod  { display: none !important;}
+.time_banner_all .spec li.display판매가 { text-decoration: line-through; margin-right: 5px; }
+.time_banner_all.ec-base-product .spec li.display상품요약정보 { height:36px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+.time_banner_all.ec-base-product .description .summary { font-size:12px; }
+.time_banner_all.ec-base-product .description .price.origin { font-size: 12px; color: #999; font-weight:400; }
+.time_banner_all.ec-base-product .description .price.sale { display:inline-block; margin-left:4px; }
+.time_banner_all.ec-base-product .description .price.sale span { font-size:14px !important; }
+.time_banner_all.ec-base-product .description .price.sale span > span { padding-left:5px; }
+
+.time_banner { position: relative; z-index:3; }
+#main .ec-base-product.time_banner_all { padding:0; }
+.ec-base-product.time_banner_all .main_title { padding:0 16px; }
+.time_banner_all h2 span { /*margin-left:24px;*/ }
+.time_banner_all h2 i { position:absolute; margin-left:8px; animation: motion 0.15s linear 0s infinite alternate; }
+.time_banner_all .box { position: relative; width:38%; }
+.time_banner_all .box:first-child { margin-left:16px; }
+.time_banner_all .box:last-child { margin-right:16px; }
+.time_banner_all .box-wrap { box-sizing:border-box; }
+.time_banner_all .box-wrap::after { content:""; display:block; clear:both;}
+.time_banner_all .box-wrap .item-wrap { /*padding:0 0 40px;*/ box-sizing:border-box; }
+.time_banner_all .box.cover:before { content: ''; position: absolute; top: 28%; left: 0; right: 0; bottom: 0; width:90%; height:8%;  margin:0 auto; background:var(--point_color); font-size:13px; line-height:13px; color:#fff; font-weight:500; border:1px solid var(--point_color); white-space:pre; text-align:center; display: flex; align-items: center; justify-content: center; z-index:5; }
+.time_banner_all .box.cover.before:before { content:'타임세일 시작전입니다.'; }
+.time_banner_all .box.cover.after:before { content:'타임세일 종료되었습니다.'; }
+.time_banner_all .box.cover.before, .time_banner_all .box.cover.after { background: rgba(255,255,255,.6); } 
+.time_banner_all .box.cover.after .item-wrap, .time_banner_all .box.cover.before .item-wrap { z-index: -1; position: relative;}
+.time_banner_all .item-wrap { position: relative; }
+
+.time_banner_all .item-top { width:90%; position: absolute;  top: 0;  left: 0; right: 0;  margin: 0 auto; border-radius: 0 0 10px 10px;  box-sizing: border-box;  background: rgba(0,0,0,0.7); }
+.time_banner_all .item-top h3 {font-size: 16px; line-height: 18px; font-weight: 700;}
+.time_banner_all .item-top .date-wrap { display:flex; align-items: center;  justify-content: center; margin: 0 0 5px; }
+.time_banner_all .item-top .date-wrap .date-title { font-size: 14px;   text-align:center; }
+.time_banner_all .item-top .date-wrap .date-title .txt { display:none; font-size: 13px;}
+.time_banner_all .item-top .date-wrap .date-title .day { font-size: 18px;	display: inline-block; vertical-align: top;	padding: 0 10px; margin: 0 7px;	
+    background-color: var(--point_color); border: 1px solid var(--point_color); border-radius: 4px; height: 21px; font-weight: 500; color: #fff; }
+
+.time_banner_all .item-top .date-wrap .countdown { font-size: 13px; letter-spacing: -0.5px; font-weight: 500; text-align: center; color:#fff; }
+.time_banner_all .item-top .date-wrap .countdown > span { padding:0 1px 0 5px;}
+.time_banner_all .item-top .date-wrap .countdown > span:first-child { padding:0 1px 0 0; }
+.time_banner_all .item-inner { }
+.time_banner_all .item-inner .item-left { margin: 8px 0; }
+.time_banner_all .item-inner .item-left img { width:100%; }
+.time_banner_all .item-inner .item-right .description { min-height:80px; margin: 16px auto 0; font-size: 12px; line-height: 1.5em; text-align: left; letter-spacing:-.3px; }
+.time_banner_all .item-inner .item-right .name { display: block; margin:0 0 4px; height:18px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.time_banner_all .item-inner .item-right .btn-wrap { display: flex;	margin: 10px 0 8px; }
+.time_banner_all .item-inner .item-right .btn-wrap > span, 
+.time_banner_all .item-inner .item-right .btn-wrap > a { display: block; position: relative; max-width: 80px; width:100%; height: 30px;	background-color: var(--point_color); border: 1px solid var(--point_color); margin: 0 0 0 2px; border-radius: 30px; text-align: center;	font-size: 13px; line-height: 30px; color: #fff; cursor: pointer;}
+.time_banner_all .item-inner .item-right .btn-wrap > span { background-color: transparent; color: #000; margin:0 2px 0 0; }
+.time_banner_all .item-inner .item-right .btn-wrap > span:after { content: '장바구니'; position: absolute; top: 0; left: 0; right:0; z-index: 1; }
+.time_banner_all .item-inner .item-right .btn-wrap > span img {	position: relative; z-index: 2;	width: 100%; height: 30px;	opacity: 0; }
+
+
+@media all and (max-width:767px){
+    .time_banner_all .item-top .date-wrap .countdown { font-size: 11px;}  
+    .time_banner_all .box.cover:before  { font-size: 11px; }
+}
+
+@keyframes motion {
+	0% { margin-top: -2px; }
+	100% { margin-top: 6px; }
+  }

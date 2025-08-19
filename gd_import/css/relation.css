@@ -1,0 +1,145 @@
+@media all and (max-width: 1299px) {
+    
+    #left_wrap { display:none; }
+    #right_wrap { display:none; }
+    .search_top .tet_box h3 { font-size:30px !important;}
+
+}
+
+
+@media all and (max-width: 1023px) {
+    
+    .path { display:none; }
+    .dp_block { display:block !important; }
+    .dp_none { display:none !important; }
+    
+    .titleArea { margin:30px 0 20px; }
+    
+    #popup_1, #popup_2 { display:none; }
+    #header .xans-layout-logotop img { max-width:180px; }
+         
+    /* 모바일 체크박스 미노출 */
+    .xans-board-function p, .boardChk/*, .ec-base-prdInfo input[type=checkbox]*/ { display:none !important; }
+
+}
+
+
+@media all and (max-width:767px){
+    
+    .pc { display: none }
+    .mobile { display: block; }
+    
+    .titleArea h2 { font-size:18px; }
+    .titleArea p { font-size:13px; }
+    
+    #header .xans-layout-logotop img { max-width:171px; }
+    #header .shoppinginfo li { min-width:42px; padding:0; }
+    #header .shoppinginfo li a .count { right:0; }
+    #header .topCate .Cate ul li a {font-size: 14px;}
+    .side { top:34%; }   
+    
+    .main_popup .txt h3 { font-size:17px; }
+    .main_popup .txt p { font-size:13px; }
+
+    .mainSlide .swiper-slide .txt { left:8%; }
+    .mainSlide .swiper-slide .txt h3 { font-size:18px; }
+    .mainSlide .swiper-slide .txt p { font-size:14px; }
+    
+    .main_title h2 { font-size:18px; }
+    .main_title .sub { font-size:13px; }
+    
+    .main_video .video_area .txt_box p { font-size:24px; }
+    
+    .mainBanner01 .txt h3 { font-size:17px; }
+    .mainBanner01 .txt p { font-size:13px; }
+    
+    .couponBanner01 .left h3 { font-size:17px; }
+    .couponBanner01 .left p { font-size:13px; }
+    .couponBanner01 .right span { font-size:13px; }
+    .couponBanner01 .right i { font-size:50px; }
+    
+    .longBanner01 .txt { left:8%; }
+    .longBanner01 .txt h3 { font-size:17px; }
+    .longBanner01 .txt p { font-size:13px; }
+    
+    .mainBanner02 .txt h3 { font-size:17px; }
+    .mainBanner02 .txt p { font-size:13px; }
+    
+    .mainGallery .galleryList li .txt .subject { font-size:14px; }
+    .mainGallery .galleryList li .txt .cont { font-size:12px; height:36px; }
+    
+    .mainReview .inner { padding:0; }    
+    .mainReview .reviewList li .txt .subject a { font-size:14px;}
+    .mainReview .reviewList li .txt .cont { font-size:12px; height:36px; }
+    .mainReview .reviewList li .txt .writer { font-size: 11px; }
+    .mainReview .reviewList li .txt .point_rate img { max-width:60px; }
+    
+    #footer .footer02 .footer_info #acco h3 { font-size:18px; }    
+    #footer .footer03 .footer_sns li { padding: 0 4px; }
+    #footer .footer03 .footer_sns li:last-child { padding: 0 0 0 4px; }
+    
+    .fixed_btn { right: 2%; bottom:150px; transform:none; }
+    .fixed_btn .scroll_btn { width:40px; }
+    .fixed_btn a i { font-size: 18px; line-height: 40px;}
+    .fixed_btn .kakao_icon { width:40px; height:40px; }
+    .fixed_btn .naver_icon { width:40px; height:40px; }
+    #goBtn .btn { width: 40px; height: 40px; }    
+    
+    /* 상품검색 페이지 */
+    .eventBanner .event_tit { font-size:18px; }
+    .searchCate h3 { font-size:18px !important; }
+    .xans-product-searchdata .searchField .keywordArea .heading { font-size:18px !important; }
+    
+    /* 공통 */    
+    .ec-base-box.gHalf:before { background:transparent; }
+    
+    .ec-base-button.gFixed { opacity:1; pointer-events : auto; }
+    
+    .ec-base-tab .menu li { width:calc(50% - 10px); }
+    .ec-base-tab .menu li a { min-width:10px; font-size:13px; }
+    
+    .ec-base-table .ec-address > li input[type="text"] { width:100%; }
+    .ec-base-table .ec-address .ec-address-zipcode input[type="text"] { width:80px; }
+    
+    .fr-toolbar .fr-btn-grp { margin:0 !important; }
+    
+    .ec-base-product .prdList .description .name span,
+    .time_banner_all .item-inner .item-right .name span { font-size: 13px !important; }
+    
+    .ec-base-product .spec li.display상품.요약설명  span { font-size: 12px !important;}
+    .ec-base-product .spec li.display상품요약정보  span { font-size: 12px !important;}
+	.ec-base-product .spec li.display소비자가 span  { font-size: 12px !important; }
+	.ec-base-product .spec li.display판매가 span,.ec-base-product .spec li.display할인판매가 span { font-size: 13px !important; }
+    .ec-base-product .prdList .description .ec-sale-rate {  font-size: 13px; }
+    
+    .xans-product-searchdata .searchResult .record { display:block !important; }
+}
+
+@media all and (max-width:599px){ 
+    
+    #popup { width:100%; }    
+    #wrap { border-width:0; } /* 모바일 좌우 라인 x */
+    
+    input[type=text]#ucc { width:60%; }
+    
+    .cateBanner .icon_area .icon_bg { max-width:42px; }
+    
+}
+
+@media all and (max-width:440px){ 
+
+    /* 6개 진열 */
+    .prdRoll02 .prdList.count6 { width:490px !important; }
+
+    /* 8개 진열 */
+    .prdRoll02 .prdList.count8 { width:660px !important; }
+
+    /* 10개 진열 */
+    .prdRoll02 .prdList.count10 { width:820px !important; }
+
+    /* 12개 진열 */
+    .prdRoll02 .prdList.count12 { max-width:980px !important; }
+
+}
+
+

@@ -1,0 +1,17 @@
+.boardMain_top { color:#222; text-align:center; margin:0 0 16px; padding: 32px 16px; box-sizing: border-box; background:#f7f7f7; }
+.boardMain_top a { color:#222; }
+.boardMain_top .tit_box h3 { font-size:24px; font-weight:600; }
+.boardMain_top .tit_box p { font-size:14px; font-weight:500; padding-top:10px; }
+
+.boardMain_top ul { display:flex;justify-content: space-around;  align-items: center; margin:32px 0 0; }
+.boardMain_top ul li i { font-size:32px; color:#222; margin:0 0 8px; }
+.boardMain_top ul li h4 { font-size:13px; font-weight:500; }
+.boardMain_top ul li span { font-size:13px; font-weight:500; }
+
+@media all and (max-width:767px){
+    .boardMain_top .tit_box h3 { font-size:18px; }
+    .boardMain_top .tit_box p { font-size:13px; }
+
+    .boardMain_top ul li h4 { font-size:12px; }
+    .boardMain_top ul li span { font-size:12px; }
+}

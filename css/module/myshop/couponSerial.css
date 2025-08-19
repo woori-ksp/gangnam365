@@ -1,0 +1,7 @@
+.xans-myshop-couponserial .ec-base-field { display: -webkit-flex; display: -ms-flex; display: flex; }
+.xans-myshop-couponserial span.ec-base-help, .xans-myshop-couponserial p.ec-base-help, .xans-myshop-couponserial ul.ec-base-help li { margin:16px 9px 2px; font-size:12px; }
+
+/* 쿠폰번호 등록 영역 */
+.xans-myshop-couponserial .formBox { margin:14px 7px; padding:0 14px 14px; background-color:#fff; }
+.xans-myshop-couponserial .formBox h3 { padding:14px 0 14px; font-weight:400; font-size:14px; color: #222; }
+.xans-myshop-couponserial .formBox input[type="text"] { width:100%; height:28px; margin:0 20px 0 0; }
